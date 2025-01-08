@@ -1,0 +1,27 @@
+.parent {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.child1 {
+    background-color: black;
+    position: absolute;
+    width: 103vw;
+    height: 12vh;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.child2 {
+    color: white;
+    opacity: 1;
+    z-index: 1;
+    background: none;
+}
+.headerText {
+    color: white;
+    font-size: 25px;
+    float: right;
+    padding: 20px;
+    padding-left: 80px;
+}
