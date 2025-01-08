@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    background-color: white;
 }
 .child1 {
     background-color: black;
@@ -10,7 +11,7 @@
     height: 8vh;
     top: 0;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 .child2 {
     color: white;
@@ -22,6 +23,5 @@
     color: white;
     font-size: 25px;
     float: right;
-    padding: 20px;
-    padding-left: 80px;
+    padding-left: 100px;
 }
