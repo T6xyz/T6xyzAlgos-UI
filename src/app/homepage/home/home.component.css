@@ -2,26 +2,98 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(47, 46, 46);
 }
 .child1 {
     background-color: black;
     position: absolute;
-    width: 103vw;
+    width: 100vw;
     height: 8vh;
     top: 0;
     left: 0;
     opacity: 0.5;
 }
 .child2 {
-    color: white;
+    color: rgb(250, 248, 248);
     opacity: 1;
     z-index: 1;
     background: none;
 }
 .headerText {
-    color: white;
+    color: rgb(250, 248, 248);
     font-size: 25px;
     float: right;
-    padding-left: 100px;
+    padding-left: 95px;
+}
+.child3 {
+    color: rgb(250, 248, 248);
+    margin-top: 310px;
+    margin-left: 200px;
+    width: 50vw;
+    opacity: 1;
+    z-index: 1;
+    background: none;
+}
+.parent2 {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(21, 21, 21);
+}
+.child4 {
+    position: absolute;
+    color: rgb(250, 248, 248);
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 50vw;
+    opacity: 1;
+    z-index: 2;
+    background: none;
+}
+.child5 {
+    position: absolute;
+    color: rgb(250, 248, 248);
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 50vw;
+    opacity: 1;
+    z-index: 1;
+    background: none;
+}
+.parent3 {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(98, 85, 85);
+}
+.parent4 {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(72, 49, 49);
+}
+.child6 {
+    position: absolute;
+    color: rgb(250, 248, 248);
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 50vw;
+    opacity: 1;
+    z-index: 2;
+    background: none;
+}
+.parent5 {
+    position: relative;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+}
+.child7 {
+    position: absolute;
+    color: rgb(250, 248, 248);
+    height: 8vh;
+    width: 50vw;
+    opacity: 1;
+    z-index: 2;
+    background: none;
 }

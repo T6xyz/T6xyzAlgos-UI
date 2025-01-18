@@ -11,4 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 export class HomeComponent {
   path: string = "/assets/T6xyzLogo.png";
   path1: string = "assets/Example-Lecture2.png";
+  pathInstagram: string = "assets/instagramLogo.png";
+  pathLinkedin: string = "assets/linkedinLogo.png";
+  pathYoutube: string = "assets/youtubeLogo.png"
 }
