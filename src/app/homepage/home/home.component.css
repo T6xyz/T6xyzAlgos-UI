@@ -22,8 +22,29 @@
 .headerText {
     color: rgb(250, 248, 248);
     font-size: 25px;
+    margin-top: 24px;
     float: right;
     padding-left: 95px;
+}
+a {
+    position: relative;
+    text-decoration: none;
+}
+a:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+a:hover {
+    color: rgb(250, 248, 248);
+}
+a:hover:after {
+    width: 100%;
 }
 .child3 {
     color: rgb(250, 248, 248);
@@ -64,13 +85,13 @@
     position: relative;
     width: 100vw;
     height: 90vh;
-    background-color: rgb(98, 85, 85);
+    background-color: rgb(49, 49, 49);
 }
 .parent4 {
     position: relative;
     width: 100vw;
     height: 90vh;
-    background-color: rgb(72, 49, 49);
+    background-color: rgb(46, 46, 46);
 }
 .child6 {
     position: absolute;
@@ -96,4 +117,16 @@
     opacity: 1;
     z-index: 2;
     background: none;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(2px);
+    transform: translateX(-10%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
