@@ -14,7 +14,9 @@
     opacity: 0.5;
 }
 .child2 {
+    overflow: auto;
     color: rgb(250, 248, 248);
+    width: 100vw;
     opacity: 1;
     z-index: 1;
     background: none;
@@ -23,6 +25,7 @@
     color: rgb(250, 248, 248);
     font-size: 25px;
     margin-top: 24px;
+    position: relative;
     float: right;
     padding-left: 95px;
 }
@@ -58,7 +61,7 @@ a:hover:after {
 .parent2 {
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     background-color: rgb(21, 21, 21);
 }
 .child4 {
@@ -84,13 +87,13 @@ a:hover:after {
 .parent3 {
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     background-color: rgb(49, 49, 49);
 }
 .parent4 {
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     background-color: rgb(46, 46, 46);
 }
 .child6 {
@@ -129,4 +132,12 @@ a:hover:after {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+button {
+    margin: auto;
+    overflow: auto;
+    position: relative;
+    left: 650px;
+    float: right;
+    top: 20px;
 }
