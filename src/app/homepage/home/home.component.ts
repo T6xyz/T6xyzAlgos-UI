@@ -16,6 +16,7 @@ export class HomeComponent implements AfterViewInit {
   pathInstagram: string = "assets/instagramLogo.png";
   pathLinkedin: string = "assets/linkedinLogo.png";
   pathYoutube: string = "assets/youtubeLogo.png";
+  pathPage1: string = "assets/homepage1.mp4";
 
   ngAfterViewInit(): void {
     const observer = new IntersectionObserver((entries) => {

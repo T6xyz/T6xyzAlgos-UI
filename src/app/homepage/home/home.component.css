@@ -50,7 +50,7 @@ a:hover:after {
     width: 100%;
 }
 .child3 {
-    color: rgb(250, 248, 248);
+    color: rgb(245, 240, 240);
     margin-top: 310px;
     margin-left: 200px;
     width: 50vw;
@@ -140,4 +140,8 @@ button {
     left: 650px;
     float: right;
     top: 20px;
+}
+video {
+    filter: blur(3px);
+    filter: drop-shadow(3px);
 }
