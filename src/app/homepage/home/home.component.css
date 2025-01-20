@@ -87,14 +87,14 @@ a:hover:after {
 .parent3 {
     position: relative;
     width: 100vw;
-    height: 95vh;
-    background-color: rgb(49, 49, 49);
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }
 .parent4 {
     position: relative;
     width: 100vw;
-    height: 95vh;
-    background-color: rgb(46, 46, 46);
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }
 .child6 {
     position: absolute;
@@ -144,4 +144,6 @@ button {
 video {
     filter: blur(3px);
     filter: drop-shadow(3px);
+    width: 100vw;
+    height: 100vh;
 }
