@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(47, 46, 46);
+    background-color: rgb(0, 0, 0);
 }
 .child1 {
     background-color: black;
@@ -61,8 +61,8 @@ a:hover:after {
 .parent2 {
     position: relative;
     width: 100vw;
-    height: 95vh;
-    background-color: rgb(21, 21, 21);
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }
 .child4 {
     position: absolute;
