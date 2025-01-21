@@ -82,6 +82,8 @@ a:after {
     display: flex;
     margin-left: 40px;
     font-size: 20px;
+    width: 1663px;
+    min-width: 1663px;
     justify-content: center;
 
 }
@@ -110,7 +112,7 @@ ul.horizontal-list li {
 .child7 {
     position: absolute;
     color: rgb(250, 248, 248);
-    width: 100vw;
+    width: 1703px;
     height: 420px;
     min-height: 420px;
     margin-top: 90px;
@@ -123,6 +125,9 @@ ul.horizontal-list li {
     padding: 0;
     display: flex;
     font-size: 17px;
+    width: 1663px;
+    min-width: 1663px;
+    margin-left: 40px;
     justify-content: center;
 
 }
