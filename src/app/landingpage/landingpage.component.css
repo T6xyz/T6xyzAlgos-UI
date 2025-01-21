@@ -1,0 +1,85 @@
+.parent {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(117, 117, 117);
+}
+.child1 {
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.child2 {
+    overflow: auto;
+    color: rgb(250, 248, 248);
+    width: 100vw;
+    opacity: 1;
+    z-index: 1;
+    background: none;
+}
+.headerText {
+    color: rgb(250, 248, 248);
+    height: 8vh;
+    font-size: 25px;
+    margin-top: 22px;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+}
+.child3 {
+    position: absolute;
+    width: 100vw;
+    height: 46vh;
+    margin-top: 90px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+}
+
+.child4 {
+    position: absolute;
+    color: rgb(250, 248, 248);
+    width: 100vw;
+    height: 46vh;
+    margin-top: 90px;
+    opacity: 1;
+    background: none;
+}
+.horizontal-list {
+    list-style-type: none;
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+ul.horizontal-list li {
+    margin-right: 400px;
+    width: 50px;
+    text-wrap: nowrap;
+    margin-top: 12px;
+    list-style-type: none;
+    color: rgb(229, 227, 227);
+  }
+
+.hidden1 {
+    opacity: 0;
+    transform: translateY(-4%);
+    transition: all 0.3s;
+}
+.show0 {
+    opacity: 0.5;
+}
+.show1 {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s;
+}
