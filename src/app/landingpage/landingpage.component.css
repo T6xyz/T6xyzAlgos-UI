@@ -2,21 +2,44 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(37, 37, 37);
 }
+a {
+    position: relative;
+    text-decoration: none;
+}
+a:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.showBar:after {
+    width: 100%;
+}
+.showBar2:hover:after {
+    width: 100%;
+}
+
 .child1 {
     background-color: black;
     position: absolute;
     width: 100vw;
-    height: 8vh;
-    top: 0;
+    height: 70px;
+    min-height: 70px;
+    top: auto;
     left: 0;
     opacity: 0.5;
 }
 .child2 {
-    overflow: auto;
     color: rgb(250, 248, 248);
     width: 100vw;
+    height: 70px;
+    min-height: 70px;
     opacity: 1;
     z-index: 1;
     background: none;
@@ -33,7 +56,8 @@
 .child3 {
     position: absolute;
     width: 100vw;
-    height: 46vh;
+    height: 380px;
+    min-height: 380px;
     margin-top: 90px;
     top: 0;
     left: 0;
@@ -45,7 +69,8 @@
     position: absolute;
     color: rgb(250, 248, 248);
     width: 100vw;
-    height: 46vh;
+    height: 380px;
+    min-height: 380px;
     margin-top: 90px;
     opacity: 1;
     background: none;
@@ -63,6 +88,47 @@
 
 ul.horizontal-list li {
     margin-right: 400px;
+    width: 50px;
+    text-wrap: nowrap;
+    margin-top: 12px;
+    list-style-type: none;
+    color: rgb(229, 227, 227);
+  }
+
+  .child6 {
+    position: absolute;
+    width: 100vw;
+    height: 420px;
+    min-height: 420px;
+    margin-top: 90px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+}
+
+.child7 {
+    position: absolute;
+    color: rgb(250, 248, 248);
+    width: 100vw;
+    height: 420px;
+    min-height: 420px;
+    margin-top: 90px;
+    opacity: 1;
+    background: none;
+}
+.horizontal-list2 {
+    list-style-type: none;
+    margin-top: -30px;
+    padding: 0;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+
+}
+
+ul.horizontal-list2 li {
+    margin-right: 385px;
     width: 50px;
     text-wrap: nowrap;
     margin-top: 12px;
