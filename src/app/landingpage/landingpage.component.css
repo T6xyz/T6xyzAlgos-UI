@@ -1,6 +1,6 @@
 .parent {
     position: relative;
-    width: 100vw;
+    width: 1728px;
     height: 100vh;
     background-color: rgb(37, 37, 37);
 }
@@ -28,7 +28,7 @@ a:after {
 .child1 {
     background-color: black;
     position: absolute;
-    width: 100vw;
+    width: 1728px;
     height: 70px;
     min-height: 70px;
     top: auto;
@@ -37,7 +37,7 @@ a:after {
 }
 .child2 {
     color: rgb(250, 248, 248);
-    width: 100vw;
+    width: 1728px;
     height: 70px;
     min-height: 70px;
     opacity: 1;
@@ -55,7 +55,7 @@ a:after {
 }
 .child3 {
     position: absolute;
-    width: 100vw;
+    width: 1728px;
     height: 380px;
     min-height: 380px;
     margin-top: 90px;
@@ -68,7 +68,7 @@ a:after {
 .child4 {
     position: absolute;
     color: rgb(250, 248, 248);
-    width: 100vw;
+    width: 1728px;
     height: 380px;
     min-height: 380px;
     margin-top: 90px;
@@ -82,8 +82,8 @@ a:after {
     display: flex;
     margin-left: 40px;
     font-size: 20px;
-    width: 1663px;
-    min-width: 1663px;
+    width: 1688px;
+    min-width: 1488px;
     justify-content: center;
 
 }
@@ -91,6 +91,7 @@ a:after {
 ul.horizontal-list li {
     margin-right: 400px;
     width: 50px;
+    min-width: 50px;
     text-wrap: nowrap;
     margin-top: 12px;
     list-style-type: none;
@@ -99,7 +100,7 @@ ul.horizontal-list li {
 
   .child6 {
     position: absolute;
-    width: 100vw;
+    width: 1728px;
     height: 420px;
     min-height: 420px;
     margin-top: 90px;
@@ -112,7 +113,7 @@ ul.horizontal-list li {
 .child7 {
     position: absolute;
     color: rgb(250, 248, 248);
-    width: 1703px;
+    width: 1728px;
     height: 420px;
     min-height: 420px;
     margin-top: 90px;
@@ -125,8 +126,8 @@ ul.horizontal-list li {
     padding: 0;
     display: flex;
     font-size: 17px;
-    width: 1663px;
-    min-width: 1663px;
+    width: 1688px;
+    min-width: 1488px;
     margin-left: 40px;
     justify-content: center;
 
@@ -135,6 +136,7 @@ ul.horizontal-list li {
 ul.horizontal-list2 li {
     margin-right: 385px;
     width: 50px;
+    min-width: 50px;
     text-wrap: nowrap;
     margin-top: 12px;
     list-style-type: none;
