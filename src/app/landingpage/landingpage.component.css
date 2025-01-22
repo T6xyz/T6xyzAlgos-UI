@@ -26,6 +26,7 @@ a:after {
 }
 
 .child1 {
+    overflow: hidden;
     background-color: black;
     position: absolute;
     width: 100vw;
@@ -36,6 +37,7 @@ a:after {
     opacity: 0.5;
 }
 .child2 {
+    overflow: hidden;
     color: rgb(250, 248, 248);
     width: 100vw;
     height: 70px;
@@ -47,16 +49,17 @@ a:after {
 .headerText {
     color: rgb(250, 248, 248);
     height: 8vh;
+    min-height: 8vh;
     font-size: 25px;
     margin-top: 22px;
     position: relative;
     float: right;
     margin-right: 100px;
+    overflow: hidden;
 }
 .child3 {
     position: absolute;
     width: 100vw;
-    min-width: 100vw;
     height: 380px;
     min-height: 380px;
     margin-top: 90px;
@@ -64,46 +67,45 @@ a:after {
     left: 0;
     opacity: 0;
     background-color: black;
+    overflow: hidden;
 }
 
 .child4 {
     position: absolute;
     color: rgb(250, 248, 248);
     width: 100vw;
-    min-width: 100vw;
     height: 380px;
     min-height: 380px;
     margin-top: 90px;
     opacity: 1;
     background: none;
+    overflow: hidden;
 }
 .horizontal-list {
     list-style-type: none;
     margin-top: -20px;
     padding: 0;
     display: flex;
-    margin-left: 40px;
     font-size: 20px;
     width: 100vw;
-    min-width: 100vw;
     justify-content: center;
-
+    float: left;
+    overflow: hidden;
 }
 
 ul.horizontal-list li {
-    margin-right: 400px;
-    width: 2vw;
-    min-width: 0vw;
     text-wrap: nowrap;
     margin-top: 12px;
     list-style-type: none;
     color: rgb(229, 227, 227);
+    padding-right: 4vw;
+    padding-left: 4vw;
+    overflow: hidden;
   }
 
   .child6 {
     position: absolute;
     width: 100vw;
-    min-width: 100vw;
     height: 420px;
     min-height: 420px;
     margin-top: 90px;
@@ -117,7 +119,6 @@ ul.horizontal-list li {
     position: absolute;
     color: rgb(250, 248, 248);
     width: 100vw;
-    min-width: 100vw;
     height: 420px;
     min-height: 420px;
     margin-top: 90px;
@@ -131,20 +132,19 @@ ul.horizontal-list li {
     display: flex;
     font-size: 17px;
     width: 100vw;
-    min-width: 100vw;
-    margin-left: 40px;
     justify-content: center;
-
+    float: left;
+    min-width: 100vw;
 }
 
 ul.horizontal-list2 li {
-    margin-right: 385px;
-    width: 2vw;
-    min-width: 0;
     text-wrap: nowrap;
     margin-top: 12px;
     list-style-type: none;
     color: rgb(229, 227, 227);
+    overflow: hidden;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 
 .hidden1 {

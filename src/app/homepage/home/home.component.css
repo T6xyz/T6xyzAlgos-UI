@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 .child1 {
     background-color: black;
@@ -12,11 +13,14 @@
     top: 0;
     left: 0;
     opacity: 0.5;
+    overflow: hidden;
 }
 .child2 {
-    overflow: auto;
+    overflow: hidden;
     color: rgb(250, 248, 248);
     width: 100vw;
+    height: 70px;
+    min-height: 70px;
     opacity: 1;
     z-index: 1;
     background: none;
@@ -53,77 +57,109 @@ a:hover:after {
     color: rgb(245, 240, 240);
     margin-top: 310px;
     margin-left: 200px;
-    width: 50vw;
+    width: 60vw;
     opacity: 1;
     z-index: 1;
     background: none;
     white-space: nowrap;
+    height: 40vh;
+    overflow: hidden;
 }
 .parent2 {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 .child4 {
     position: absolute;
     color: rgb(250, 248, 248);
     margin-top: 200px;
     margin-left: 200px;
-    width: 50vw;
+    width: 60vw;
+    height: 50vh;
     opacity: 1;
     z-index: 2;
     background: none;
     white-space: nowrap;
+    overflow: hidden;
 }
 .child5 {
     position: absolute;
     color: rgb(250, 248, 248);
     margin-top: 200px;
     margin-left: 200px;
-    width: 50vw;
+    width: 60vw;
+    height: 50vh;
     opacity: 1;
     z-index: 1;
     background: none;
     white-space: nowrap;
+    overflow: hidden;
 }
 .parent3 {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 .parent4 {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 .child6 {
     position: absolute;
     color: rgb(250, 248, 248);
     margin-top: 200px;
     margin-left: 200px;
-    width: 50vw;
+    width: 65vw;
+    height: 50vh;
     opacity: 1;
     z-index: 2;
     background: none;
     white-space: nowrap;
+    overflow: hidden;
 }
 .parent5 {
     position: relative;
     width: 100vw;
-    height: 8vh;
+    height: 70px;
+    min-height: 70px;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 .child7 {
+    background-color: black;
     position: absolute;
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    overflow: hidden;
+}
+.child8 {
+    overflow: hidden;
     color: rgb(250, 248, 248);
-    height: 8vh;
-    width: 50vw;
+    width: 100vw;
+    height: 15vh;
+    min-height: 15vh;
     opacity: 1;
-    z-index: 2;
+    z-index: 1;
     background: none;
+}
+.bottomText {
+    color: rgb(250, 248, 248);
+    font-size: 25px;
+    margin-top: 24px;
+    position: relative;
+    float: right;
+    padding-left: 40px;
 }
 
 .hidden {
@@ -138,11 +174,8 @@ a:hover:after {
     transform: translateX(0);
 }
 button {
-    margin: auto;
-    overflow: auto;
     position: relative;
     left: 650px;
-    float: right;
     top: 20px;
 }
 video {
