@@ -1,6 +1,7 @@
 .parent {
     position: relative;
     width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -9,20 +10,23 @@
     background-color: black;
     position: absolute;
     width: 100vw;
+    max-width: 100%;
     height: 8vh;
     top: 0;
+    left: 0;
     opacity: 0.5;
     overflow: hidden;
 }
 .child2 {
-    overflow: hidden;
     color: rgb(250, 248, 248);
     width: 100vw;
-    height: 40vh;
-    min-height: 40vh;
+    max-width: 100%;
+    height: 60vh;
+    min-height: 60vh;
     opacity: 1;
     z-index: 1;
     background: none;
+    overflow: hidden;
 }
 .headerText {
     color: rgb(250, 248, 248);
@@ -44,6 +48,7 @@ a:after {
     background-color: rgb(50, 184, 184);
     height: 3px;
     width: 0;
+    left: 0;
     bottom: -10px;
     transition: 0.4s;
 }
@@ -56,17 +61,20 @@ a:hover:after {
 .child3 {
     color: rgb(245, 240, 240);
     margin-top: 310px;
+    margin-left: 10vw;
     width: 100vw;
+    max-width: 100%;
     opacity: 1;
     z-index: 1;
     background: none;
     white-space: nowrap;
-    height: 40vh;
+    height: 60vh;
     overflow: hidden;
 }
 .parent2 {
     position: relative;
     width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -75,7 +83,9 @@ a:hover:after {
     position: absolute;
     color: rgb(250, 248, 248);
     margin-top: 200px;
+    margin-left: 10vw;
     width: 100vw;
+    max-width: 100%;
     height: 50vh;
     opacity: 1;
     z-index: 2;
@@ -87,7 +97,9 @@ a:hover:after {
     position: absolute;
     color: rgb(250, 248, 248);
     margin-top: 200px;
+    margin-left: 10vw;
     width: 100vw;
+    max-width: 100%;
     height: 50vh;
     opacity: 1;
     z-index: 1;
@@ -98,6 +110,7 @@ a:hover:after {
 .parent3 {
     position: relative;
     width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -105,6 +118,7 @@ a:hover:after {
 .parent4 {
     position: relative;
     width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -113,7 +127,9 @@ a:hover:after {
     position: absolute;
     color: rgb(250, 248, 248);
     margin-top: 200px;
+    margin-left: 10vw;
     width: 100vw;
+    max-width: 100%;
     height: 50vh;
     opacity: 1;
     z-index: 2;
@@ -124,6 +140,7 @@ a:hover:after {
 .parent5 {
     position: relative;
     width: 100vw;
+    max-width: 100%;
     height: 70px;
     min-height: 70px;
     background-color: rgb(0, 0, 0);
@@ -133,8 +150,10 @@ a:hover:after {
     background-color: black;
     position: absolute;
     width: 100vw;
+    max-width: 100%;
     height: 15vh;
     top: 0;
+    left: 0;
     opacity: 0.5;
     overflow: hidden;
 }
@@ -142,6 +161,7 @@ a:hover:after {
     overflow: hidden;
     color: rgb(250, 248, 248);
     width: 100vw;
+    max-width: 100%;
     height: 15vh;
     min-height: 15vh;
     opacity: 1;
@@ -178,4 +198,5 @@ video {
     filter: drop-shadow(3px);
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
 }
