@@ -3,129 +3,30 @@
         <div class="child1">
         </div>
         <div class="child1 child2">
-            <img [src] = "path" height="60 px" width="150" style="margin-top: 8px; margin-left: 30px;">
-            <a href="" class="headerText showBar2" style="left: -70px;">Leetcode Solutions</a>
-            <a href="" class="headerText" style="left: -70px;" id="aid">Algorithms</a>
-            <a href="" class="headerText" style="left: -70px;" id="dsid">Data Structures</a>
+            <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
         </div>
-        <div class="child3 hidden1" id="ds0">
+    </div>
+    <div class="parent2">
+        <!-- In the future, swap with actual username -->
+        <h1 class="welcome">Hello Ben,</h1>
+        <p class="welcomeSubtext">Choose a subject below to begin learning</p>
+        <div class="divDS">
+            <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo()" (mouseleave)="pauseVideo()">
+                <video id="dsCardVid" [src]="pathDS" muted loop></video>
+                <mat-card-content class="cardTextDS">Data Structures
+                    <svg>
+                        <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
+                        <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
+                        <text x="30px" y="58px" fill="#d6d6d6" font-size="22px" font-weight="bold" style="transform:rotate(90deg) translate(0px, -100px)">70%</text>
+                    </svg>
+                </mat-card-content>
+                
+            </mat-card>
         </div>
-        <div class="child3 child4 hidden1" id="ds1">
-            <ul class="horizontal-list">
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture">Arrays</li>
-                            <li>Array</li>
-                            <li>Array-List</li>
-                            <li>Circular Array</li>
-                            <li class="headerLecture" style="margin-top: 25px;">Linked Lists</li>
-                            <li>Singly Linked List</li>
-                            <li>Doubly Linked List</li>
-                            <li>Circular Linked List</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture">Stacks/Queues</li>
-                            <li>Stack</li>
-                            <li>Queue</li>
-                            <li>Dequeue</li>
-                            <li class="headerLecture" style="margin-top: 25px;">Heap/Priority Queue</li>
-                            <li>Min/Max Heap</li>
-                            <li class="headerLecture" style="margin-top: 25px;">Tries</li>
-                            <li>Prefix Tree</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture">Trees</li>
-                            <li>Recursion</li>
-                            <li>Binary Search Trees</li>
-                            <li>AVL Tree</li>
-                            <li>Fenwick Tree</li>
-                            <li class="headerLecture" style="margin-top: 25px;">Hashmaps</li>
-                            <li>Closed Addressing</li>
-                            <li>Open Addressing</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="child6 hidden1" id="a0">
-        </div>
-        <div class="child6 child7 hidden1" id="a1">
-            <ul class="horizontal-list2">
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture2">Divide and Conquer</li>
-                            <li>Master Theorem</li>
-                            <li>Binary Search</li>
-                            <li>Merge Sort</li>
-                            <li>Quick Sort</li>
-                            <li class="headerLecture2" style="margin-top: 17px;">Pattern Matching</li>
-                            <li>KMP (Knuth-Morris-Pratt)</li>
-                            <li>Boyer Moore</li>
-                            <li>Rabin Karp</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture2">Sorting</li>
-                            <li>Selection Sort</li>
-                            <li>Insertion Sort</li>
-                            <li>Bubble Sort</li>
-                            <li>Radix Sort</li>
-                            <li>Heap Sort</li>
-                            <li class="headerLecture2" style="margin-top: 17px;">Prefix Sum/Sliding Window</li>
-                            <li>1-D Prefix Sum</li>
-                            <li>2-D Prefix Sum</li>
-                            <li>Sliding Window Algorithms</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture2">Graphs</li>
-                            <li>DFS (Depth-First Search)</li>
-                            <li>BFS (Breadth-First Search)</li>
-                            <li>Topological Sort</li>
-                            <li class="headerLecture2" style="margin-top: 17px;">Shortest Path Algorithms</li>
-                            <li>Dijkstras</li>
-                            <li>Bellman-Ford</li>
-                            <li>Floyd-Warshall</li>
-                            <li>Shortest Path in a DAG</li>
-                            <li class="headerLecture2" style="margin-top: 17px;">Strongly Connected Components</li>
-                            <li>Strongly Connected Component Algorithm</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <ul>
-                            <li class="headerLecture2">Dynamic Programming</li>
-                            <li>String DP</li>
-                            <li>LIS (Longest Increasing Sub-sequence)</li>
-                            <li>Knapsack</li>
-                            <li>Chain Matrix Multiplication</li>
-                            <li>Bitmask DP</li>
-                            <li class="headerLecture2" style="margin-top: 17px;">Greedy</li>
-                            <li>Greedy Algorithms</li>
-                            <li class="headerLecture2" style="margin-top: 17px;">Minimum Spanning Tree</li>
-                            <li>Kruskals Algorithm</li>
-                            <li>Prims Algorithm</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+        <div style="display: flex; justify-content: center;">
+            <mat-card appearance="outlined" class="cardA">
+                <mat-card-content class="cardTextA">Algorithms</mat-card-content>
+            </mat-card>
         </div>
     </div>
 </body>
