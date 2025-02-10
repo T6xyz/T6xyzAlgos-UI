@@ -4,8 +4,8 @@
         </div>
         <div class="child1 child2">
             <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
-            <a href="" class="header1">
-                <img [src] = "profilePic" class="profile">
+            <a (click)="toggleProfile()" class="header1">
+                <img [src] = "profilePic" class="profile" id="icon">
             </a>
             <a href="http://localhost:4200/home" class="header2">Courses</a>
         </div>
@@ -15,10 +15,11 @@
         <h1 class="welcome">Hello Ben,</h1>
         <p class="welcomeSubtext">Choose a subject below to begin learning</p>
         <div class="divDS">
-            <a href="">
+            <a href="" style="display: inline-block; width: 0%; height: 0%;">
                 <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo('ds')" (mouseleave)="pauseVideo('ds')">
-                    <video id="dsCardVid" [src]="pathDS" muted loop></video>
-                    <mat-card-content class="cardTextDS">Data Structures
+                    <video id="dsCardVid" [src]="pathDS" muted loop playsinline></video>
+                    <mat-card-content class="cardTextDS">
+                        <p>Data Structures</p>
                         <svg>
                             <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
                             <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
@@ -29,10 +30,11 @@
             </a>
         </div>
         <div class="divA">
-            <a href="">
+            <a href="" style="display: inline-block; width: 0%; height: 0%;">
                 <mat-card appearance="outlined" class="cardA" (mouseenter)="playVideo('a')" (mouseleave)="pauseVideo('a')">
-                    <video id="aCardVid" [src]="pathA" muted loop></video>
-                    <mat-card-content class="cardTextA">Algorithms
+                    <video id="aCardVid" [src]="pathA" muted loop playsinline></video>
+                    <mat-card-content class="cardTextA">
+                        <p>Algorithms</p>
                         <svg>
                             <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
                             <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="240.76px"></circle>
@@ -42,5 +44,7 @@
                 </mat-card>
             </a>
         </div>
+        <app-profilebar></app-profilebar>
     </div>
+    <app-infobar></app-infobar>
 </body>

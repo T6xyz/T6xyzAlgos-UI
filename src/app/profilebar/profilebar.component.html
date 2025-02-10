@@ -1,0 +1,19 @@
+
+<div class="container hidden" id="profileMain">
+    <img [src]="profilePic" class="profile"id="profileMain">
+    <p class="profileName" id="profileMain">{{ profileName }}</p>
+    <hr class="line" id="profileMain">
+    <a href="" class="header1" style="bottom: 40px;" (click)="toggleElement()">
+        My Profile
+    </a>
+    <br>
+    <a href="" class="header2" style="bottom: 10px;" (click)="toggleElement()">
+        Premium
+    </a>
+    <br>
+    <a href="" class="header3" style="bottom: -20px;" (click)="toggleElement()">
+        Settings
+    </a>
+    <br>
+    <button mat-stroked-button class="hover-class"style="color: rgb(219, 89, 89); display: block; margin-left: auto; margin-right: auto; margin-top: 60px; width: 200px; transition: 0.4s;">Sign Out</button>
+</div>

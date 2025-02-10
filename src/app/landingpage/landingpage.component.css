@@ -28,6 +28,7 @@ a:after {
 }
 
 .child1 {
+    user-select: none;
     overflow: hidden;
     background-color: black;
     position: absolute;
@@ -42,6 +43,7 @@ a:after {
     border-bottom: solid lightgrey 0.5px;
 }
 .child2 {
+    user-select: none;
     overflow: hidden;
     color: rgb(250, 248, 248);
     width: 100vw;
@@ -117,20 +119,26 @@ a:after {
 .cardTextDS {
     color: rgb(237, 237, 237);
     font-size: 55px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     text-align: center;
     align-items: center;
-    bottom: 203px;
     text-shadow: 1px 1px 2px black, 0 0 25px black;
     backdrop-filter: blur(0.5px);
 }
 .cardTextA {
     color: rgb(237, 237, 237);
     font-size: 55px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     text-align: center;
     align-items: center;
-    bottom: 203px;
     text-shadow: 1px 1px 2px black, 0 0 25px black;
     backdrop-filter: blur(0.5px);
 }
@@ -138,27 +146,23 @@ a:after {
     position: relative;
     width: 100;
     max-width: 100%;
-    height: 1000px;
-    min-height: 900px;
+    height: 700px;
+    min-height: 1000px;
     overflow: hidden;
     background-color: rgb(8, 8, 8);
 }
 video {
-    filter: drop-shadow(10px);
     width: 100%;
     height: 100%;
-    min-width: 100%;
-    min-height: 100%;
     object-fit: cover;
     border-radius: 25px;
     filter: blur(1.2px);
-    
 }
 svg {
     position: absolute;
     transform:rotate(-90deg);
     right: -105px;
-    top: -25px;
+    top: 45px;
 }
 .cardDS:hover {
     transform: scale(1.025);
@@ -181,6 +185,9 @@ svg {
         height: 260px;
         right: 100px;
     }
+    svg {
+        top: 28px;
+    }
 }
 @media screen and (max-width: 1130px) {
     .cardDS {
@@ -199,6 +206,9 @@ svg {
     .welcomeSubtext {
         left: -200px;
     }
+    svg {
+        top: 28px;
+    }
 }
 .cardA:hover {
     transform: scale(1.025);
@@ -209,15 +219,17 @@ svg {
     width: 40px;
     border-radius: 50%;
     border: solid grey 1.5px;
+    user-select: none;
 }
 .header1 {
+    width: 0%;
     float: right; 
-    margin-right: 20px; 
+    margin-right: 65px; 
     margin-top: 13px;
 }
 .header2 {
     float: right; 
-    margin-right: 35px; 
+    margin-right: 40px; 
     margin-top: 20px;
     color: rgb(250, 248, 248);
     font-size: 25px;
@@ -237,4 +249,29 @@ svg {
 }
 .header2:hover:after {
     width: 100%;
+}
+.header1:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.profile:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+@media screen and (max-width: 659px) {
+    .child2 {
+        display: none;
+    }
+    .cardDS {
+        display: none;
+    }
+    .cardA {
+        display: none;
+    }
+    .cardTextDS {
+        display: none;
+    }
+    .cardTextA {
+        display: none;
+    }
 }
