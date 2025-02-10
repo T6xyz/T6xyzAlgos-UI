@@ -11,19 +11,27 @@ import {MatCardModule} from '@angular/material/card';
 export class LandingpageComponent implements AfterViewInit{
   path: string = "/assets/T6xyzLogo.png";
   pathDS: string = "assets/pageDS.mp4";
+  pathA: string = "assets/pageA.mp4";
   circumference: number = 439.6;
-  offset: number = 109.9;
+  offset: number = 109.9
+  profilePic: string = "assets/profile.jpg";
 
   ngAfterViewInit(): void {
 
   }
-  playVideo() {
+  playVideo(type: string) {
     let video = <HTMLVideoElement> document.getElementById("dsCardVid")
+    if (type === "a") {
+      video = <HTMLVideoElement> document.getElementById("aCardVid")
+    }
     video?.play()
   }
 
-  pauseVideo() {
+  pauseVideo(type: string) {
     let video = <HTMLVideoElement> document.getElementById("dsCardVid")
+    if (type === "a") {
+      video = <HTMLVideoElement> document.getElementById("aCardVid")
+    }
     video?.pause();
     video.currentTime = 0;
   }

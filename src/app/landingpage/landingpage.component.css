@@ -39,7 +39,7 @@ a:after {
     left: 0;
     opacity: 0.5;
     max-height: 70px;
-    border-bottom: solid rgb(216, 214, 214) 1px;
+    border-bottom: solid lightgrey 0.5px;
 }
 .child2 {
     overflow: hidden;
@@ -76,72 +76,72 @@ a:after {
     background-color: black;
     overflow: hidden;
 }
-.divDS {
-    display: flex; 
-    justify-content: center;
-}
-.divA {
-    display: flex; 
-    justify-content: center;
-}
 .welcome {
     color: rgb(237, 237, 237);
     position: absolute;
-    margin-top: 40px;
+    margin-top: 15px;
     margin-left: 250px;
     font-size: 55px;
 }
 .welcomeSubtext {
     color: rgb(162, 156, 156);
     position: absolute;
-    margin-top: 102px;
+    margin-top: 77px;
     margin-left: 250px;
     font-size: 18px;
 }
 .cardDS {
     color: rgb(237, 237, 237);
     position: relative;
-    width: 680px;
-    margin-top: 180px;
+    width: 700px;
+    margin-top: 120px;
     height: 280px;
+    margin-left: 500px;
     background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(250, 248, 248);
+    border: 1.5px solid rgb(250, 248, 248);
     transition: transform .5s ease;
+    transform: translateY(-1%);
 }
 .cardA {
     color: rgb(237, 237, 237);
-    position: absolute;
-    width: 680px;
-    margin-top: 80px;
+    position: relative;
+    width: 700px;
+    margin-top: 40px;
     height: 280px;
-    background-color: rgb(43, 43, 43);
-    border: 1px solid rgb(250, 248, 248);
+    margin-left: 500px;
+    background-color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(250, 248, 248);
+    transition: transform .5s ease;
+    transform: translateY(-1%);
 }
 .cardTextDS {
     color: rgb(237, 237, 237);
     font-size: 55px;
     position: relative;
     text-align: center;
+    align-items: center;
     bottom: 203px;
     text-shadow: 1px 1px 2px black, 0 0 25px black;
     backdrop-filter: blur(0.5px);
 }
 .cardTextA {
     color: rgb(237, 237, 237);
-    font-size: 50px;
-    text-align: center;
+    font-size: 55px;
     position: relative;
+    text-align: center;
     align-items: center;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 203px;
+    text-shadow: 1px 1px 2px black, 0 0 25px black;
+    backdrop-filter: blur(0.5px);
 }
 .parent2 {
     position: relative;
-    width: 100vw;
+    width: 100;
     max-width: 100%;
-    height: 1300px;
+    height: 1000px;
     min-height: 900px;
     overflow: hidden;
+    background-color: rgb(8, 8, 8);
 }
 video {
     filter: drop-shadow(10px);
@@ -152,6 +152,7 @@ video {
     object-fit: cover;
     border-radius: 25px;
     filter: blur(1.2px);
+    
 }
 svg {
     position: absolute;
@@ -160,6 +161,80 @@ svg {
     top: -25px;
 }
 .cardDS:hover {
-    transform: scale(1.02);
+    transform: scale(1.025);
     transition: transform .5s ease;
-  }
+}
+@media screen and (max-width: 1310px) {
+    .cardDS {
+        width: 660px;
+        height: 260px;
+        right: 100px;
+    }
+    .welcome {
+        left: -100px;
+    }
+    .welcomeSubtext {
+        left: -100px;
+    }
+    .cardA {
+        width: 660px;
+        height: 260px;
+        right: 100px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .cardDS {
+        width: 660px;
+        height: 260px;
+        right: 300px;
+    }
+    .cardA {
+        width: 660px;
+        height: 260px;
+        right: 300px;
+    }
+    .welcome {
+        left: -200px;
+    }
+    .welcomeSubtext {
+        left: -200px;
+    }
+}
+.cardA:hover {
+    transform: scale(1.025);
+    transition: transform .5s ease;
+}
+.profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid grey 1.5px;
+}
+.header1 {
+    float: right; 
+    margin-right: 20px; 
+    margin-top: 13px;
+}
+.header2 {
+    float: right; 
+    margin-right: 35px; 
+    margin-top: 20px;
+    color: rgb(250, 248, 248);
+    font-size: 25px;
+}
+.header2:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.header2:hover {
+    color: rgb(250, 248, 248);
+}
+.header2:hover:after {
+    width: 100%;
+}

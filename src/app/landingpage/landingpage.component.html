@@ -4,6 +4,10 @@
         </div>
         <div class="child1 child2">
             <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
+            <a href="" class="header1">
+                <img [src] = "profilePic" class="profile">
+            </a>
+            <a href="http://localhost:4200/home" class="header2">Courses</a>
         </div>
     </div>
     <div class="parent2">
@@ -11,22 +15,32 @@
         <h1 class="welcome">Hello Ben,</h1>
         <p class="welcomeSubtext">Choose a subject below to begin learning</p>
         <div class="divDS">
-            <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo()" (mouseleave)="pauseVideo()">
-                <video id="dsCardVid" [src]="pathDS" muted loop></video>
-                <mat-card-content class="cardTextDS">Data Structures
-                    <svg>
-                        <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
-                        <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
-                        <text x="30px" y="58px" fill="#d6d6d6" font-size="22px" font-weight="bold" style="transform:rotate(90deg) translate(0px, -100px)">70%</text>
-                    </svg>
-                </mat-card-content>
-                
-            </mat-card>
+            <a href="">
+                <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo('ds')" (mouseleave)="pauseVideo('ds')">
+                    <video id="dsCardVid" [src]="pathDS" muted loop></video>
+                    <mat-card-content class="cardTextDS">Data Structures
+                        <svg>
+                            <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
+                            <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
+                            <text x="34px" y="58px" fill="#d6d6d6" font-size="19px" style="transform:rotate(90deg) translate(0px, -100px)" font-family="Arial">70%</text>
+                        </svg>
+                    </mat-card-content>
+                </mat-card>
+            </a>
         </div>
-        <div style="display: flex; justify-content: center;">
-            <mat-card appearance="outlined" class="cardA">
-                <mat-card-content class="cardTextA">Algorithms</mat-card-content>
-            </mat-card>
+        <div class="divA">
+            <a href="">
+                <mat-card appearance="outlined" class="cardA" (mouseenter)="playVideo('a')" (mouseleave)="pauseVideo('a')">
+                    <video id="aCardVid" [src]="pathA" muted loop></video>
+                    <mat-card-content class="cardTextA">Algorithms
+                        <svg>
+                            <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
+                            <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="240.76px"></circle>
+                            <text x="34px" y="58px" fill="#d6d6d6" font-size="19px" style="transform:rotate(90deg) translate(0px, -100px)" font-family="Arial">63%</text>
+                        </svg>
+                    </mat-card-content>
+                </mat-card>
+            </a>
         </div>
     </div>
 </body>
