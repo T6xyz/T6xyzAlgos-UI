@@ -2,6 +2,7 @@
     height: 130px;
     width: 100vw;
     min-height: 130px;
+    width: 100%;
 }
 a {
     float: right;

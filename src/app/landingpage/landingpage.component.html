@@ -14,15 +14,15 @@
         <!-- In the future, swap with actual username -->
         <h1 class="welcome">Hello Ben,</h1>
         <p class="welcomeSubtext">Choose a subject below to begin learning</p>
-        <div class="divDS">
-            <a href="" style="display: inline-block; width: 0%; height: 0%;">
+        <div>
+            <a routerLink="/ds" style="display: inline-block; width: 0%; height: 0%;">
                 <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo('ds')" (mouseleave)="pauseVideo('ds')">
                     <video id="dsCardVid" [src]="pathDS" muted loop playsinline></video>
                     <mat-card-content class="cardTextDS">
                         <p>Data Structures</p>
                         <svg>
-                            <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
-                            <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
+                            <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="2px"></circle>
+                            <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="2px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
                             <text x="34px" y="58px" fill="#d6d6d6" font-size="19px" style="transform:rotate(90deg) translate(0px, -100px)" font-family="Arial">70%</text>
                         </svg>
                     </mat-card-content>
@@ -36,8 +36,8 @@
                     <mat-card-content class="cardTextA">
                         <p>Algorithms</p>
                         <svg>
-                            <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="4px"></circle>
-                            <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="4px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="240.76px"></circle>
+                            <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="2px"></circle>
+                            <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="2px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="240.76px"></circle>
                             <text x="34px" y="58px" fill="#d6d6d6" font-size="19px" style="transform:rotate(90deg) translate(0px, -100px)" font-family="Arial">63%</text>
                         </svg>
                     </mat-card-content>
