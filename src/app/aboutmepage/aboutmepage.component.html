@@ -1,0 +1,31 @@
+<body>
+    <div class="parent">
+        <div class="child1">
+        </div>
+        <div class="child1 child2">
+            <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
+            <a (click)="toggleProfile()" class="header1">
+                <img [src] = "profilePic" class="profile" id="icon">
+            </a>
+            <a href="http://localhost:4200/home" class="header2">Courses</a>
+        </div>
+    </div>
+    <div class="parent2">
+        <div class="aboutDiv">
+            <img [src] = "headshot" class="headshotImage">
+        </div>
+        <div>
+            <h1 style="position: relative; text-align: center; color: white; right: 50px; top: 20px; font-size: 40px;">About T6xyz</h1>
+            <p style="position: relative; color: rgb(202, 200, 200); line-height: 32px; font-size: 19px; width: 1000px; top: 20px;">
+                Hi, my name is Ben Zwolenik and I am fourth year computer science major at the Georgia Institute of Technology. I am currently a software engineer
+                intern at Amazon specializing in backend technologies with an interest in AI and Machine Learning as well. I have a passion for solving data structures
+                and algorithms problems and enjoy helping people solve complex problems. I developed T6xyz to help students pass their data structures and algorithms courses
+                and prepare for technical interviews. Throughout my college career, I have noticed that a good number of students have struggled in their data structures and 
+                algorithms courses due to poor lecturing and unclear explanation of the topics in data structures and algorithms. My goal for T6xyz is to not only provide deep insight on the concepts in data structures
+                and algorithms, but to provide knowledge on how data structures and algorithms are used in practice to solve real-world problems.
+            </p>
+        </div>
+        <app-profilebar></app-profilebar>
+    </div>
+    <app-infobar></app-infobar>
+</body>

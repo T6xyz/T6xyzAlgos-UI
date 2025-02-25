@@ -15,7 +15,7 @@
         <h1 class="welcome">Hello Ben,</h1>
         <p class="welcomeSubtext">Choose a subject below to begin learning</p>
         <div>
-            <a routerLink="/ds" style="display: inline-block; width: 0%; height: 0%;">
+            <a href="http://localhost:4200/ds" style="display: inline-block; width: 0%; height: 0%;">
                 <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo('ds')" (mouseleave)="pauseVideo('ds')">
                     <video id="dsCardVid" [src]="pathDS" muted loop playsinline></video>
                     <mat-card-content class="cardTextDS">
@@ -30,7 +30,7 @@
             </a>
         </div>
         <div class="divA">
-            <a routerLink="/a" style="display: inline-block; width: 0%; height: 0%;">
+            <a href="http://localhost:4200/a" style="display: inline-block; width: 0%; height: 0%;">
                 <mat-card appearance="outlined" class="cardA" (mouseenter)="playVideo('a')" (mouseleave)="pauseVideo('a')">
                     <video id="aCardVid" [src]="pathA" muted loop playsinline></video>
                     <mat-card-content class="cardTextA">

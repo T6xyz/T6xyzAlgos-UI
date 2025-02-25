@@ -3,10 +3,12 @@ import { HomeComponent } from './homepage/home/home.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { DatastructurespageComponent } from './datastructurespage/datastructurespage.component';
 import { AlgorithmspageComponent } from './algorithmspage/algorithmspage.component';
+import { AboutmepageComponent } from './aboutmepage/aboutmepage.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: LandingpageComponent},
     {path: 'ds', component: DatastructurespageComponent},
-    {path: 'a', component: AlgorithmspageComponent}
+    {path: 'a', component: AlgorithmspageComponent},
+    {path: 'about', component: AboutmepageComponent},
 ];
