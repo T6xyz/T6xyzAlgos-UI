@@ -6,20 +6,19 @@ import { NgIf } from '@angular/common';
 import { InfobarComponent } from '../infobar/infobar.component';
 import { Router, Routes } from '@angular/router';
 import { DatastructurespageComponent } from '../datastructurespage/datastructurespage.component';
+import { AlgorithmspageComponent } from '../algorithmspage/algorithmspage.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-landingpage',
-  imports: [MatCardModule, ProfilebarComponent, NgIf, InfobarComponent, RouterLink, RouterOutlet],
+  imports: [MatCardModule, ProfilebarComponent, NgIf, InfobarComponent, RouterLink, RouterOutlet, AlgorithmspageComponent],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.css'
 })
-export class LandingpageComponent implements AfterViewInit{
+export class LandingpageComponent implements AfterViewInit {
   path: string = "/assets/T6xyzLogo.png";
   pathDS: string = "assets/pageDS.mp4";
   pathA: string = "assets/pageA.mp4";
-  circumference: number = 439.6;
-  offset: number = 109.9
   profilePic: string = "assets/profile.jpg";
 
   ngAfterViewInit(): void {
