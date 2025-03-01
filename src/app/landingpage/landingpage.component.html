@@ -1,48 +1,48 @@
 <body>
-    <div class="parent">
-        <div class="child1">
+    <div class="parentLanding">
+        <div class="child1Landing">
         </div>
-        <div class="child1 child2">
+        <div class="child1Landing child2Landing">
             <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
-            <a (click)="toggleProfile()" class="header1">
-                <img [src] = "profilePic" class="profile" id="icon">
+            <a (click)="toggleProfile()" class="header1Landing">
+                <img [src] = "profilePic" class="profileLanding" id="icon">
             </a>
-            <a href="http://localhost:4200/home" class="header2">Courses</a>
+            <a href="http://localhost:4200/home" class="header2Landing">Courses</a>
         </div>
     </div>
-    <div class="parent2">
+    <div class="parent2Landing">
         <!-- In the future, swap with actual username -->
-        <h1 class="welcome">Hello Ben,</h1>
-        <p class="welcomeSubtext">Choose a subject below to begin learning</p>
+        <h1 class="welcomeLanding">Hello Ben,</h1>
+        <p class="welcomeSubtextLanding">Choose a subject below to begin learning</p>
         <div>
-            <a href="http://localhost:4200/ds" style="display: inline-block; width: 0%; height: 0%;">
-                <mat-card appearance="outlined" class="cardDS" (mouseenter)="playVideo('ds')" (mouseleave)="pauseVideo('ds')">
-                    <video id="dsCardVid" [src]="pathDS" muted loop playsinline></video>
+            <mat-card appearance="outlined" class="cardDS" style="background-color: black;">
+                <a href="http://localhost:4200/ds" style="height: 100%; width: 100%;">
+                    <img id="imageDS" [src]="pathDS" class="homeImage">
                     <mat-card-content class="cardTextDS">
                         <p>Data Structures</p>
-                        <svg>
+                        <svg class="svgLanding">
                             <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="2px"></circle>
                             <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="2px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="263.76px"></circle>
                             <text x="34px" y="58px" fill="#d6d6d6" font-size="19px" style="transform:rotate(90deg) translate(0px, -100px)" font-family="Arial">70%</text>
                         </svg>
                     </mat-card-content>
-                </mat-card>
-            </a>
+                </a>
+            </mat-card>
         </div>
-        <div class="divA">
-            <a href="http://localhost:4200/a" style="display: inline-block; width: 0%; height: 0%;">
-                <mat-card appearance="outlined" class="cardA" (mouseenter)="playVideo('a')" (mouseleave)="pauseVideo('a')">
-                    <video id="aCardVid" [src]="pathA" muted loop playsinline></video>
+        <div>
+            <mat-card appearance="outlined" class="cardA" style="background-color: black;">
+                <a href="http://localhost:4200/a" style="height: 100%; width: 100%;">
+                    <img id="imageA" [src]="pathA" class="homeImage">
                     <mat-card-content class="cardTextA">
                         <p>Algorithms</p>
-                        <svg>
+                        <svg class="svgLanding">
                             <circle r="42" cx="52" cy="52" fill="transparent" stroke="#e0e0e0" stroke-width="2px"></circle>
                             <circle r="42" cx="52" cy="52" stroke="#4CAF41" stroke-width="2px" stroke-linecap="round" stroke-dashoffset="79px" fill="transparent" stroke-dasharray="240.76px"></circle>
                             <text x="34px" y="58px" fill="#d6d6d6" font-size="19px" style="transform:rotate(90deg) translate(0px, -100px)" font-family="Arial">63%</text>
                         </svg>
                     </mat-card-content>
-                </mat-card>
-            </a>
+                </a>
+            </mat-card>
         </div>
         <app-profilebar></app-profilebar>
     </div>

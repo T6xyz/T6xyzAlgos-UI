@@ -1,14 +1,3 @@
-.container {
-    height: 130px;
-    width: 100vw;
-    min-height: 130px;
-    width: 100%;
-}
-a {
-    float: right;
-    margin-top: 30px;
-    padding-right: 35px;
-}
 @media screen and (max-width: 659px) {
     a {
         display: none;
