@@ -20,10 +20,10 @@ export class DatastructurespageComponent implements AfterViewInit {
     document.addEventListener("click", (event) => {
       let id = <HTMLElement> event.target;
       let profile = <HTMLElement> document.getElementById("profileMain")
-      if (id !== null && id.id !== "icon" && !(id.id === "profileMain" && profile.classList.contains("show"))) {
+      if (id !== null && id.id !== "icon" && !(id.id === "profileMain" && profile.classList.contains("showProfile"))) {
         if (profile !== null) {
-          profile.classList.remove("show")
-          profile.classList.add("hidden")
+          profile.classList.remove("showProfile")
+          profile.classList.add("hiddenProfile")
         }
       }
     });
@@ -31,12 +31,12 @@ export class DatastructurespageComponent implements AfterViewInit {
   toggleProfile() {
     let id = document.getElementById("profileMain")
 
-    if (id?.classList.contains("hidden")) {
-      id.classList.remove("hidden")
-      id.classList.add("show")
+    if (id?.classList.contains("hiddenProfile")) {
+      id.classList.remove("hiddenProfile")
+      id.classList.add("showProfile")
     } else if (id !== null){
-      id.classList.remove("show")
-      id.classList.add("hidden")
+      id.classList.remove("showProfile")
+      id.classList.add("hiddenProfile")
     }
   }
 }
