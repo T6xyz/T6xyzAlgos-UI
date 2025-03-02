@@ -340,7 +340,7 @@ a {
     width: 700px;
     margin-top: 120px;
     height: 280px;
-    margin-left: 500px;
+    margin-left: 400px;
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(250, 248, 248);
     transition: transform .5s ease;
@@ -353,13 +353,13 @@ a {
     width: 700px;
     margin-top: 40px;
     height: 280px;
-    margin-left: 500px;
+    margin-left: 400px;
     background-color: rgb(0, 0, 0);
-    border: 1.5px solid rgb(250, 248, 248);
+    border: 1px solid rgb(250, 248, 248);
     transition: transform .5s ease;
     transform: translateY(-1%);
 }
-.cardTextDS {
+.cardTextDSLanding {
     color: rgb(237, 237, 237);
     font-size: 55px;
     position: absolute;
@@ -376,7 +376,7 @@ a {
     z-index: 1;
     height: 0px;
 }
-.cardTextA {
+.cardTextALanding {
     color: rgb(237, 237, 237);
     font-size: 55px;
     position: absolute;
@@ -384,7 +384,7 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
-    height: 0;
+    height: 0px;
     text-align: center;
     align-items: center;
     text-shadow: 1px 1px 2px black, 0 0 25px black;
@@ -401,17 +401,14 @@ a {
     overflow: hidden;
     background-color: rgb(8, 8, 8);
 }
-.videoLanding {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
 .svgLanding {
     position: absolute;
     transform:rotate(-90deg);
-    right: -105px;
-    top: 45px;
+    right: 0px;
+    top: 175px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
 }
 .cardDS:hover {
     transform: scale(1.025);
@@ -469,11 +466,16 @@ a {
 .homeImage {
     border-radius: 25px;
     object-fit: cover;
-    height: 100%;
     width: 100%;
-    min-width: 100%;
-    min-height: 100%;
+    border-radius: 25px;
+    height: 276px;
 }
+.landingLink {
+    height: 276px;
+}
+
+
+
 /* Styles for the infobar component */
 .containerInfobar {
     height: 130px;
@@ -485,4 +487,418 @@ a {
     float: right;
     margin-top: 30px;
     padding-right: 35px;
+}
+
+
+
+/* Styles for the datastructures page component */
+.parentDS {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 70px;
+    background-color: black;
+}
+.showBarDS:after {
+    width: 100%;
+}
+.showBar2DS:hover:after {
+    width: 100%;
+}
+
+.child1DS {
+    user-select: none;
+    overflow: hidden;
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    min-height: 70px;
+    top: auto;
+    left: 0;
+    opacity: 0.5;
+    max-height: 70px;
+    border-bottom: solid lightgrey 0.5px;
+}
+.child2DS {
+    user-select: none;
+    overflow: hidden;
+    color: rgb(250, 248, 248);
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    min-height: 70px;
+    opacity: 1;
+    z-index: 1;
+    background: none;
+}
+.headerTextDS {
+    color: rgb(216, 214, 214);
+    height: 70px;
+    min-height: 70px;
+    font-size: 25px;
+    margin-top: 22px;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    overflow: hidden;
+}
+.child3DS {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 380px;
+    min-height: 380px;
+    margin-top: 90px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.parent2DS {
+    position: relative;
+    width: 100;
+    max-width: 100%;
+    height: 2800px;
+    min-height: 2800px;
+    overflow: hidden;
+    background-color: rgb(8, 8, 8);
+}
+
+.profileDS {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid grey 1.5px;
+    user-select: none;
+}
+.header1DS {
+    width: 0%;
+    float: right; 
+    margin-right: 65px; 
+    margin-top: 13px;
+}
+.header2DS {
+    float: right; 
+    margin-right: 40px; 
+    margin-top: 21px;
+    color: rgb(250, 248, 248);
+    font-size: 25px;
+}
+.header2DS:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.header2DS:hover {
+    color: rgb(250, 248, 248);
+}
+.header2DS:hover:after {
+    width: 100%;
+}
+.header1DS:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.profileDS:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+@media screen and (max-width: 659px) {
+    .child2DS {
+        display: none;
+    }
+}
+.textMainDS {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    color: rgb(219, 217, 217); 
+    font-size: 22px;
+    width: 1100px;
+    line-height: 30px;
+}
+.topicCardDS {
+    color: rgb(237, 237, 237);
+    position: relative;
+    margin-top: 30px;
+    width: 650px;
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(250, 248, 248);
+    transition: transform .5s ease;
+    transform: translateY(-1%);
+}
+.topicCardDS:hover {
+    transform: scale(1.025);
+    transition: transform .5s ease;
+}
+
+.svgDS {
+    position: absolute;
+    transform:rotate(-90deg);
+    top: 75px;
+    right: 0px;
+    height: 100px;
+    width: 100px;
+}
+
+.cardTextDS {
+    color: rgb(237, 237, 237);
+    font-size: 36px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px black;
+    backdrop-filter: blur(0.5px);
+    height: 0px;
+}
+
+.topicsDS {
+    position: relative;
+}
+
+.header2DS:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.header2DS:hover {
+    color: rgb(250, 248, 248);
+}
+.header2DS:hover:after {
+    width: 100%;
+}
+.header1DS:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.profileDS:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+/* Styles for the algorithms page */
+.parentA {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 70px;
+    background-color: black;
+}
+.showBarA:after {
+    width: 100%;
+}
+.showBar2A:hover:after {
+    width: 100%;
+}
+
+.child1A {
+    user-select: none;
+    overflow: hidden;
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    min-height: 70px;
+    top: auto;
+    left: 0;
+    opacity: 0.5;
+    max-height: 70px;
+    border-bottom: solid lightgrey 0.5px;
+}
+.child2A {
+    user-select: none;
+    overflow: hidden;
+    color: rgb(250, 248, 248);
+    width: 100vw;
+    max-width: 100%;
+    height: 70px;
+    min-height: 70px;
+    opacity: 1;
+    z-index: 1;
+    background: none;
+}
+.headerTextA {
+    color: rgb(216, 214, 214);
+    height: 70px;
+    min-height: 70px;
+    font-size: 25px;
+    margin-top: 22px;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    overflow: hidden;
+}
+.child3A {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 380px;
+    min-height: 380px;
+    margin-top: 90px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.parent2A {
+    position: relative;
+    width: 100;
+    max-width: 100%;
+    height: 3100px;
+    min-height: 3100px;
+    overflow: hidden;
+    background-color: rgb(8, 8, 8);
+}
+
+.profileA {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid grey 1.5px;
+    user-select: none;
+}
+.header1A {
+    width: 0%;
+    float: right; 
+    margin-right: 65px; 
+    margin-top: 13px;
+}
+.header2A {
+    float: right; 
+    margin-right: 40px; 
+    margin-top: 21px;
+    color: rgb(250, 248, 248);
+    font-size: 25px;
+}
+.header2A:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.header2A:hover {
+    color: rgb(250, 248, 248);
+}
+.header2A:hover:after {
+    width: 100%;
+}
+.header1A:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.profileA:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.textMainA {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    color: rgb(219, 217, 217); 
+    font-size: 22px;
+    width: 1100px;
+    line-height: 30px;
+}
+.topicCardA {
+    color: rgb(237, 237, 237);
+    position: relative;
+    margin-top: 30px;
+    width: 650px;
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(250, 248, 248);
+    transition: transform .5s ease;
+    transform: translateY(-1%);
+}
+.topicCardA:hover {
+    transform: scale(1.025);
+    transition: transform .5s ease;
+}
+
+.svgA {
+    position: absolute;
+    transform:rotate(-90deg);
+    height: 100px;
+    width: 100px;
+    right: 0px;
+    top: 80px;
+}
+
+.cardTextAA {
+    color: rgb(237, 237, 237);
+    font-size: 36px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px black;
+    backdrop-filter: blur(0.5px);
+}
+
+.topicsA {
+    position: relative;
+}
+
+.header2A:after {
+    content: "";
+    display: block;
+    background-color: rgb(50, 184, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.header2A:hover {
+    color: rgb(250, 248, 248);
+}
+.header2A:hover:after {
+    width: 100%;
+}
+.header1A:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.profileA:hover {
+    cursor: pointer;
+    cursor: hand;
 }
