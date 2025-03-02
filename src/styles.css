@@ -902,3 +902,157 @@ a {
     cursor: pointer;
     cursor: hand;
 }
+
+/* MEDIA QUERIES*/
+@media screen and (max-width: 1310px) {
+    .cardDS {
+        width: 660px;
+        height: 260px;
+        right: 100px;
+    }
+    .welcomeLanding {
+        left: -100px;
+    }
+    .welcomeSubtextLanding {
+        left: -100px;
+    }
+    .cardA {
+        width: 660px;
+        height: 260px;
+        right: 100px;
+    }
+    .linkLanding {
+        height: 256px;
+    }
+    .homeImage {
+        height: 256px;
+    }
+    .svgLanding {
+        height: 95px;
+        width: 95px;
+        top: 161px;
+        right: 5px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .cardDS {
+        width: 660px;
+        height: 260px;
+        right: 300px;
+    }
+    .cardA {
+        width: 660px;
+        height: 260px;
+        right: 300px;
+    }
+    .welcomeLanding {
+        left: -200px;
+    }
+    .welcomeSubtextLanding {
+        left: -200px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .cardDS {
+        width: 580px;
+        height: 180px;
+        right: 350px;
+    }
+    .cardA {
+        width: 580px;
+        height: 180px;
+        right: 350px;
+    }
+    .welcomeLanding {
+        left: -200px;
+    }
+    .welcomeSubtextLanding {
+        left: -200px;
+    }
+    .linkLanding {
+        height: 176px;
+    }
+    .homeImage {
+        height: 176px;
+        filter: blur(1.5px);
+    }
+    .svgLanding {
+        height: 95px;
+        width: 95px;
+        top: 80px;
+        right: 5px;
+    }
+    .cardTextALanding {
+        font-size: 50px;
+    }
+    .cardTextDSLanding {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 659px) {
+    .parent2Landing {
+        display: none;
+    }
+    .containerInfoBar {
+        display: None;
+    }
+    .header2Landing {
+        display: None;
+    }
+    .header1Landing {
+        display: None;
+    }
+}
+@media screen and (max-width: 1155px) {
+    .textMainA {
+        font-size: 19px;
+        width: 940px;
+    }
+    .textMainDS {
+        font-size: 19px;
+        width: 940px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .textMainA {
+        font-size: 17px;
+        width: 740px;
+    }
+    .textMainDS {
+        font-size: 17px;
+        width: 740px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .textMainA {
+        font-size: 15px;
+        width: 630px;
+    }
+    .textMainDS {
+        font-size: 15px;
+        width: 630px;
+    }
+}
+@media screen and (max-width: 659px) {
+    .parent2A {
+        display: none;
+    }
+    .parent2DS {
+        display: none;
+    }
+    .containerInfoBar {
+        display: None;
+    }
+    .header2A {
+        display: None;
+    }
+    .header1A {
+        display: None;
+    }
+    .header2DS {
+        display: None;
+    }
+    .header1DS {
+        display: None;
+    }
+}

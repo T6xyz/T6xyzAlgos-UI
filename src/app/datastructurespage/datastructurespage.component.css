@@ -11,35 +11,3 @@ a:after {
     left: 0;
     transition: 0.4s;
 }
-@media screen and (max-width: 1155px) {
-    .textMainDS {
-        font-size: 19px;
-        width: 940px;
-    }
-}
-@media screen and (max-width: 970px) {
-    .textMainDS {
-        font-size: 17px;
-        width: 740px;
-    }
-}
-@media screen and (max-width: 769px) {
-    .textMainDS {
-        font-size: 15px;
-        width: 630px;
-    }
-}
-@media screen and (max-width: 659px) {
-    .parent2DS {
-        display: none;
-    }
-    .containerInfoBar {
-        display: None;
-    }
-    .header2DS {
-        display: None;
-    }
-    .header1DS {
-        display: None;
-    }
-}
