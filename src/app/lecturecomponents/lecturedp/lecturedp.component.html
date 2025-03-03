@@ -4,10 +4,11 @@
         </div>
         <div class="child1Lecturedp child2Lecturedp">
             <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
+            <span style="color: rgb(250, 248, 248); font-size: 25px; position: relative; bottom: 21px; left: 17px;">Algorithms</span>
             <a (click)="toggleProfile()" class="header1Lecturedp">
                 <img [src] = "profilePic" class="profileLecturedp" id="icon">
             </a>
-            <a href="http://localhost:4200/home" class="header2Lecturedp">Courses</a>
+            <a href="http://localhost:4200/a" class="header2Lecturedp">Course Home</a>
         </div>
     </div>
 
@@ -36,10 +37,43 @@
                     <p>Bitmask DP</p>
                 </li>
             </ul>
-            <button mat-raised-button style="background-color: rgb(18, 52, 139); width: 200px; color: rgb(226, 226, 226); top: -30px; height: 40px; ">Back To Course Home</button>
         </div>
         <div class="lecturedp1Div" id="lecture1dp">
-            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Intro to Dynamic Programming</h1>
+            <h1 style="color: white; font-size: 55px; text-align: center; position: relative;">Intro to Dynamic Programming</h1>
+            <p style="color: white; font-size: 19px; width: 1150px; margin: auto;">
+                Dynamic Programming is a topic that is often considered one of the most difficult concept to master in algorithms. It is not uncommon to hear 
+                someone discuss how they encountered an extremely hard dynamic programming problem in an interview or competitive coding contest. Dynamic
+                Programming is often seen as a daunting concept to master and many lecturers disucss Dynammic Programming in an abstract manner, leaving many students confused. 
+                While Dynamic Programming can be difficult to grasp, these next few lectures will discuss a variety of different Dynamic Programming topics in-depth to help simplify the concepts.
+            </p>
+            <h1 style="color: white; font-size: 55px; text-align: center; position: relative;">What is Dynamic Programming?</h1>
+            <p style="color: white; font-size: 19px; width: 1150px; margin: auto;">
+                Dynamic Programming is an optimization technique used to solve complex problems by dividing them into smaller, simpler sub-problems and
+                using the solutions to those sub-problems to solve a larger, more complex problem. Often times, many brute-force algorithms have an exponential or factorial runtime, 
+                which for large sized inputs, can lead to slow computations that might take a long time to run. Problems that can be solved using Dynamic Programming contain the following properties:
+            </p>
+            <br>
+            <p style="color: white; font-size: 19px; width: 1150px; margin: auto;">
+                <b>1.</b> The problem can be divided into smaller, simpler sub-problems. Those
+                sub-problems can then be used to find the solution to a larger, more complex problem.
+            </p>
+            <br>
+            <p style="color: white; font-size: 19px; width: 1150px; margin: auto;">
+                <b>2.</b> The problem has overlapping sub-problems. Rather than recomputing solutions to
+                sub-problems that have already been solved, dynamic programming utilizes a data structure to cache the solutions to 
+                sub-problems that have already been computed, removing redundant computations and decreasing overall run-time.
+            </p>
+            <br>
+            <p style="color: white; font-size: 19px; width: 1150px; margin: auto;">
+                Knowing these key ideas, we can leverage these two properties to create an efficient Dynamic Programming solution. Now you might 
+                be wondering, how do we create a Dynamic Programming solution? What makes up a Dynamic Programming solution? We will discuss this
+                in the next section below.
+            </p>
+            <br>
+            <p style="color: rgb(146, 146, 146); font-size: 22px; width: 1150px; margin: auto;">
+                <b>*For the rest of the lecture on Dynamic Programming, we will refer to Dynamic Programming as "DP" for simplicity.</b>
+            </p>
+            <h1 style="color: white; font-size: 55px; text-align: center; position: relative;">The Four Main Components of a DP Solution</h1>
         </div>
         <div class="lecturedp2Div" id="lecture2dp" style="display: none;">
             <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Dynamic Programming on Strings</h1>
