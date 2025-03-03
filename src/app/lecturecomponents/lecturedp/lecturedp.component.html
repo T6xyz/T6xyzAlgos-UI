@@ -1,0 +1,62 @@
+<body>
+    <div class="parentLecturedp">
+        <div class="child1Lecturedp">
+        </div>
+        <div class="child1Lecturedp child2Lecturedp">
+            <img [src] = "path" height="60 px" width="150" style="margin-top: 8px;">
+            <a (click)="toggleProfile()" class="header1Lecturedp">
+                <img [src] = "profilePic" class="profileLecturedp" id="icon">
+            </a>
+            <a href="http://localhost:4200/home" class="header2Lecturedp">Courses</a>
+        </div>
+    </div>
+
+    <div class="parent2Lecturedp">
+        <div class="lecturelistdivdp">
+            <ul class="lecturelistdp">
+                <li class="lecturelistdpitem" style="background-color: rgb(79, 79, 79); font-size: 30px; position: relative; justify-content: center; color: white; cursor: default; padding-top: 10px; padding-bottom: 10px; top: -5px;">
+                    Dynamic Programming
+                </li>
+                <li class="lecturelistdpitem" id="dp1" (click)="displayDp1()">
+                    <p>Intro to Dynamic Programming</p>
+                </li>
+                <li class="lecturelistdpitem" id="dp2" (click)="displayDp2()">
+                    <p>String DP</p>
+                </li>
+                <li class="lecturelistdpitem" id="dp3" (click)="displayDp3()">
+                    <p>LIS (Longest Increasing Subsequence)</p>
+                </li>
+                <li class="lecturelistdpitem" id="dp4" (click)="displayDp4()">
+                    <p>Knapsack</p>
+                </li>
+                <li class="lecturelistdpitem" id="dp5" (click)="displayDp5()">
+                    <p>Chain Matrix Multiplication</p>
+                </li>
+                <li class="lecturelistdpitem" id="dp6" (click)="displayDp6()">
+                    <p>Bitmask DP</p>
+                </li>
+            </ul>
+            <button mat-raised-button style="background-color: rgb(18, 52, 139); width: 200px; color: rgb(226, 226, 226); top: -30px; height: 40px; ">Back To Course Home</button>
+        </div>
+        <div class="lecturedp1Div" id="lecture1dp">
+            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Intro to Dynamic Programming</h1>
+        </div>
+        <div class="lecturedp2Div" id="lecture2dp" style="display: none;">
+            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Dynamic Programming on Strings</h1>
+        </div>
+        <div class="lecturedp3Div" id="lecture3dp" style="display: none;">
+            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">LIS (Longest Increasing Subsequence)</h1>
+        </div>
+        <div class="lecturedp4Div" id="lecture4dp" style="display: none;">
+            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Knapsack</h1>
+        </div>
+        <div class="lecturedp5Div" id="lecture5dp" style="display: none;">
+            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Chain Matrix Multiplication</h1>
+        </div>
+        <div class="lecturedp6Div" id="lecture6dp" style="display: none;">
+            <h1 style="color: white; font-size: 60px; text-align: center; position: relative; top: -60px;">Bitmask Dynamic Programming</h1>
+        </div>
+        <app-profilebar></app-profilebar>
+    </div>
+    <app-infobar></app-infobar>
+</body>

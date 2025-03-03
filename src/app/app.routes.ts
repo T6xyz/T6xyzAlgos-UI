@@ -4,6 +4,7 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { DatastructurespageComponent } from './datastructurespage/datastructurespage.component';
 import { AlgorithmspageComponent } from './algorithmspage/algorithmspage.component';
 import { AboutmepageComponent } from './aboutmepage/aboutmepage.component';
+import { LecturedpComponent } from './lecturecomponents/lecturedp/lecturedp.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -11,4 +12,5 @@ export const routes: Routes = [
     {path: 'ds', component: DatastructurespageComponent},
     {path: 'a', component: AlgorithmspageComponent},
     {path: 'about', component: AboutmepageComponent},
+    {path: 'dp', component: LecturedpComponent}
 ];
