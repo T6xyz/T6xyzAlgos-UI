@@ -6,7 +6,8 @@ body {
   padding: 0;
   max-width: 100%;
   max-height: 100%;
-  background: black;
+  min-height: 100%;
+  background: rgb(0, 0, 0);
 }
 
 a {
@@ -521,9 +522,9 @@ a {
 /* Styles for the infobar component */
 .containerInfobar {
   height: 130px;
-  width: 100vw;
-  min-height: 130px;
   width: 100%;
+  max-width: 100%;
+  min-height: 130px;
 }
 
 .infoText {
@@ -1121,6 +1122,7 @@ a {
     display: None;
   }
 }
+
 /* Styles for the DP lecture component */
 .parentLecturedp {
   position: relative;
@@ -1393,3 +1395,182 @@ button:hover {
 p {
   line-height: 30px;
 }
+/* Styles for the login component */
+.loginMain {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.parentLogin {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+.loginContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 420px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.loginContainer h1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 36px;
+  text-align: center;
+}
+.loginContainer .inputLogin {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.inputLogin input {
+  margin: 0;
+  padding: 0 0 0 7px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  backdrop-filter: blur(12px);
+}
+.inputLogin input::placeholder {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.loginContainer .rememberLogin {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.rememberLogin label input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  accent-color: white;
+  margin-right: 3px;
+}
+
+.rememberLogin a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+.rememberLogin a:hover {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: underline;
+}
+
+.loginContainer .btn {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  font-weight: 600;
+}
+
+.loginContainer .registerLogin {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.registerLogin p a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerLogin p a:hover {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: underline;
+}
+.parent2Login {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 130px;
+  min-height: 130px;
+  overflow: hidden;
+  background-color: rgb(8, 8, 8);
+}
+.videoLogin {
+  position: absolute;
+  filter: blur(3px);
+  filter: drop-shadow(3px);
+  width: 100vw;
+  height: 50vh;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-right: auto;
+}
+.loginLink {
+  font-size: 22px;
+  color: white;
+  position: absolute;
+  height: 0;
+  top: 10px;
+  left: 50px;
+  z-index: 10;
+  cursor: pointer;
+}
+.loginLink:hover{
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+}
+.loginLinkText {
+  border: solid grey 1px; 
+  padding: 1px 30px 1px 30px; 
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* Styles for the register component */

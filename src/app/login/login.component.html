@@ -1,0 +1,31 @@
+<body>
+    <div class="loginMain">
+        <video [src]="pathPage" muted loop autoplay disablepictureinpicture class="videoLogin"></video>
+        <a href="" class="loginLink"><p class="loginLinkText">Home</p></a>
+        <div class="parentLogin">
+            <div class="loginContainer">
+                <form action="">
+                    <h1 style="color: white;">Login</h1>
+                    <div class="inputLogin">
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="inputLogin">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="rememberLogin">
+                        <label style="color: white;"><input type="checkbox">Remember me</label>
+                        <a href="">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="registerLogin">
+                        <p style="color: white;">Don't have an account?<a href=""> Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="parent2Login">
+        <app-infobar></app-infobar>
+    </div>
+</body>

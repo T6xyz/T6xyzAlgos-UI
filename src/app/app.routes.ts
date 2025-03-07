@@ -5,6 +5,8 @@ import { DatastructurespageComponent } from './datastructurespage/datastructures
 import { AlgorithmspageComponent } from './algorithmspage/algorithmspage.component';
 import { AboutmepageComponent } from './aboutmepage/aboutmepage.component';
 import { LecturedpComponent } from './lecturecomponents/lecturedp/lecturedp.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -12,5 +14,7 @@ export const routes: Routes = [
     {path: 'ds', component: DatastructurespageComponent},
     {path: 'a', component: AlgorithmspageComponent},
     {path: 'about', component: AboutmepageComponent},
-    {path: 'dp', component: LecturedpComponent}
+    {path: 'dp', component: LecturedpComponent},
+    {path: 'login', component: LoginComponent},
+    {path: 'register', component: RegisterComponent}
 ];
