@@ -1544,7 +1544,7 @@ p {
   position: absolute;
   filter: blur(3px);
   filter: drop-shadow(3px);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   z-index: 2;
@@ -1579,5 +1579,13 @@ p {
 }
 .loginLinkText:hover:after {
   width: 100%;
+}
+@media screen and (max-width: 659px) {
+  .loginLink {
+    display: none;
+  }
+  .parent2Login {
+    display: none;
+  }
 }
 /* Styles for the register component */
