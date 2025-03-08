@@ -1397,8 +1397,8 @@ p {
 }
 /* Styles for the login component */
 .loginMain {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 .parentLogin {
@@ -1409,9 +1409,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  z-index: 2;
 }
 .loginContainer {
   margin: 0;
@@ -1498,13 +1498,13 @@ p {
   box-sizing: border-box;
   width: 100%;
   height: 45px;
-  background-color: white;
   border: none;
+  background-color: rgb(37, 143, 143);
   outline: none;
   border-radius: 40px;
   cursor: pointer;
   font-size: 16px;
-  color: rgb(77, 77, 77);
+  color: rgb(238, 238, 238);
   font-weight: 600;
 }
 
@@ -1538,7 +1538,6 @@ p {
   max-width: 100%;
   height: 130px;
   min-height: 130px;
-  overflow: hidden;
   background-color: rgb(8, 8, 8);
 }
 .videoLogin {
@@ -1546,31 +1545,39 @@ p {
   filter: blur(3px);
   filter: drop-shadow(3px);
   width: 100vw;
-  height: 50vh;
-  min-width: 100%;
-  min-height: 100%;
+  height: 100vh;
   object-fit: cover;
-  margin-top: auto;
-  margin-right: auto;
+  z-index: 2;
 }
 .loginLink {
-  font-size: 22px;
+  font-size: 25px;
   color: white;
   position: absolute;
   height: 0;
-  top: 10px;
-  left: 50px;
+  top: 35px;
+  left: 80px;
   z-index: 10;
   cursor: pointer;
 }
-.loginLink:hover{
-  transform: scale(1.04);
-  transition: transform 0.5s ease;
-}
-.loginLinkText {
-  border: solid grey 1px; 
-  padding: 1px 30px 1px 30px; 
+.loginLinkText { 
   border-radius: 15px;
   cursor: pointer;
+}
+
+.loginLinkText:after {
+  content: "";
+  display: block;
+  background-color: rgb(50, 184, 184);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+.loginLinkText:hover {
+  color: rgb(250, 248, 248);
+}
+.loginLinkText:hover:after {
+  width: 100%;
 }
 /* Styles for the register component */

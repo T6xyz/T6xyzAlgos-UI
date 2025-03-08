@@ -10,7 +10,8 @@ import { InfobarComponent } from '../infobar/infobar.component';
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit, AfterViewInit {
-  pathPage: string = "assets/homepage3.mp4";
+  pathLoginVid: string = "assets/pageLogin.mp4"
+  backIcon: string = "assets/backIcon.png"
 
   ngOnInit(): void {
       

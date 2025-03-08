@@ -37,6 +37,7 @@
     padding-left: 5vw;
     right: 10vw;
     overflow: hidden;
+    cursor: pointer;
 }
 a {
     position: relative;
