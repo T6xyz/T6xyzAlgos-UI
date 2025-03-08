@@ -1,28 +1,28 @@
 <body>
-    <div class="parent">
-        <video [src] = "pathPage1" muted loop autoplay></video>
-        <div class="child1">
+    <div class="parentHome">
+        <video [src] = "pathPage1" muted loop autoplay class="videoHome"></video>
+        <div class="child1Home">
         </div>
-        <div class="child1 child2">
+        <div class="child1Home child2Home">
             <img [src] = "path" height="60px" width="150px" style="margin-top: 8px;">
-            <button mat-flat-button style="position: relative; float: right; left: -8vw; background-color: rgb(50, 184, 184);">Register</button>
-            <p class="headerText" style="font-size: 18px; position: relative;">or</p>
-            <a href="http://localhost:4200/login" class="headerText">Sign in</a>
-            <a href="http://localhost:4200/about" class="headerText">About</a>
-            <a href="" class="headerText">Home</a>
+            <button class="buttonHome" mat-flat-button style="position: relative; float: right; left: -8vw; background-color: rgb(37, 143, 143);">Register</button>
+            <p class="headerTextHome" style="font-size: 18px; position: relative;">or</p>
+            <a href="http://localhost:4200/login" class="headerTextHome">Sign in</a>
+            <a href="http://localhost:4200/about" class="headerTextHome">About</a>
+            <a href="" class="headerTextHome">Home</a>
             
         </div>
-        <div class="child3 child4">
+        <div class="child3Home child4Home">
             <h1 style="font-size: 70px; ">Data Structures and <br> Algorithms Simplified</h1>
             <p style="font-size: 26px; margin-top: -30px; color: rgb(210, 208, 208);">Learn and gain insight on fundamental data structures and algorithms <br> 
                 to pass technical interviews and build crucial problem-solving skills</p>
         </div>
     </div>
-    <div class="parent2">
-        <video [src] = "pathPage2" muted loop autoplay></video>
-        <div class="child5" style="opacity: 0;">
+    <div class="parent2Home">
+        <video [src] = "pathPage2" muted loop autoplay class="videoHome"></video>
+        <div class="child5Home" style="opacity: 0;">
         </div>
-        <div class="child5 child6 hidden">
+        <div class="child5Home child6Home hiddenHome">
             <h1 style="font-size: 70px;">Learn Fundamental <br> Data Structures</h1>
             <p style="font-size: 26px; margin-top: -30px; color: rgb(210, 208, 208);">
                 Learn how to implement fundamental data structures and their operations. 
@@ -30,11 +30,11 @@
             </p>
         </div>
     </div>
-    <div class="parent3">
-        <video [src] = "pathPage3" muted loop autoplay></video>
-        <div class="child7" style="opacity: 0;">
+    <div class="parent3Home">
+        <video [src] = "pathPage3" muted loop autoplay class="videoHome"></video>
+        <div class="child7Home" style="opacity: 0;">
         </div>
-        <div class="child7 child8 hidden">
+        <div class="child7Home child8Home hiddenHome">
             <h1 style="font-size: 70px;">Learn Fundamental <br> Algorithms</h1>
             <p style="font-size: 26px; margin-top: -30px; color: rgb(174, 170, 170);">
                 Learn how to design and implement fundamental algorithms. 
@@ -43,31 +43,16 @@
             </p>
         </div>
     </div>
-    <div class="parent4">
-        <video [src] = "pathPage4" muted loop autoplay></video>
-        <div class="child9" style="opacity: 0;">
+    <div class="parent4Home">
+        <video [src] = "pathPage4" muted loop autoplay class="videoHome"></video>
+        <div class="child9Home" style="opacity: 0;">
         </div>
-        <div class="child9 child10 hidden">
+        <div class="child9Home child10Home hiddenHome">
             <h1 style="font-size: 70px;">Gain Access to High <br> Quality Leetcode Solutions</h1>
             <p style="font-size: 26px; margin-top: -30px; color: rgb(174, 170, 170);">
                 Gain access to high quality, detailed Leetcode solutions including <br>
                 solutions to some of the most difficult problems on the site.
         </div>
     </div>
-    <div class="parent5">
-        <div class="child11">
-        </div>
-        <div class="child11 child12">
-            <img [src] = "path" height="55 px" width="140" style="margin-top: 10px; margin-left: 20px;">
-            <a class="bottomText" style="margin-right: 5vw;">
-                <img [src] = "pathYoutube" height="25px" width="25px">
-            </a>
-            <a class="bottomText">
-                <img [src] = "pathInstagram" height="25px">
-            </a>
-            <a class="bottomText" href="https://www.linkedin.com/in/bzwolenik/">
-                <img [src] = "pathLinkedin" height="25px" width="25px">
-            </a>
-        </div>
-    </div>
+    <app-infobar></app-infobar>
 </body>

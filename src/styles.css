@@ -1592,3 +1592,235 @@ p {
   }
 }
 /* Styles for the register component */
+/* Styles for the home component */
+.parentHome {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 900px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.child1Home {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  height: 70px;
+  min-height: 50px;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.child2Home {
+  color: rgb(250, 248, 248);
+  width: 100vw;
+  max-width: 100%;
+  height: 60vh;
+  opacity: 1;
+  z-index: 1;
+  background: none;
+  overflow: hidden;
+}
+.headerTextHome {
+  color: rgb(250, 248, 248);
+  font-size: 25px;
+  margin-top: 24px;
+  position: relative;
+  float: right;
+  padding-left: 5vw;
+  right: 10vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+.child2Home a {
+  position: relative;
+  text-decoration: none;
+}
+.child2Home a:after {
+  content: "";
+  display: block;
+  background-color: rgb(50, 184, 184);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+.child2Home a:hover {
+  color: rgb(250, 248, 248);
+}
+.child2Home a:hover:after {
+  width: 100%;
+}
+.parent2Home {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 900px;
+  min-height: 900px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.child3Home {
+  background-color: rgb(162, 156, 156);
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+  min-height: 300px;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.child4Home {
+  color: rgb(245, 240, 240);
+  margin-top: 310px;
+  margin-left: 10vw;
+  width: 100vw;
+  max-width: 100%;
+  opacity: 1;
+  z-index: 1;
+  background: none;
+  white-space: nowrap;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+}
+.child5Home {
+  background-color: rgb(162, 156, 156);
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
+  min-height: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.child6Home {
+  position: absolute;
+  color: rgb(250, 248, 248);
+  margin-top: 200px;
+  margin-left: 10vw;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
+  min-height: 300px;
+  opacity: 1;
+  z-index: 2;
+  background: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.parent3Home {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 900px;
+  min-height: 900px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.child7Home {
+  background-color: rgb(162, 156, 156);
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  height: 350px;
+  min-height: 350px;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.child8Home {
+  position: absolute;
+  color: rgb(250, 248, 248);
+  margin-top: 200px;
+  margin-left: 10vw;
+  width: 100vw;
+  max-width: 100%;
+  height: 350px;
+  min-height: 350px;
+  opacity: 0;
+  z-index: 1;
+  background: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.parent4Home {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.child9Home {
+  background-color: rgb(162, 156, 156);
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
+  min-height: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.child10Home {
+  position: absolute;
+  color: rgb(250, 248, 248);
+  margin-top: 200px;
+  margin-left: 10vw;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
+  min-height: 300px;
+  opacity: 1;
+  z-index: 2;
+  background: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hiddenHome {
+  opacity: 0;
+  transition: all 1.5s;
+  filter: blur(2px);
+  transform: translateX(-10%);
+}
+.showHome {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.buttonHome {
+  margin-top: 16px;
+  overflow: hidden;
+}
+.videoHome {
+  filter: blur(3px);
+  filter: drop-shadow(3px);
+  width: 100vw;
+  height: 50vh;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .headerTextHome {
+      opacity: 0;
+  }
+  .bottomTextHome {
+      opacity: 0;
+  }
+}
+@media screen and (max-height: 336px) {
+  .child8Home {
+      font-size: 2px;
+  }
+}
