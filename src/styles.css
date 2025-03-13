@@ -241,6 +241,7 @@ a {
   border-left: solid lightgrey 0.5px;
   border-top: solid lightgrey 0.5px;
   opacity: 0;
+  display: none;
 }
 
 .profileProfile {
@@ -271,13 +272,15 @@ a {
 }
 
 .hiddenProfile {
-  display: 0;
+  display: none;
+  opacity: 0;
   filter: blur(1);
   transition: all 0.3s;
   transform: translateX(2%);
 }
 
 .showProfile {
+  display: inline-block;
   opacity: 1;
   filter: blur(0);
   transition: all 0.3s;
@@ -1363,13 +1366,6 @@ a {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.parent2Lecturedp::-webkit-scrollbar {
-  display: none;
-}
-.parent2Lecturedp {
-  scrollbar-width: none;
-}
-
 
 .lecturedp2Div {
   display: table-cell; 
