@@ -1208,9 +1208,10 @@ a {
 
 .parent2Lecturedp {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   background-color: rgb(8, 8, 8);
+  height: 800px;
 }
 
 .profileLecturedp {
@@ -1360,7 +1361,7 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
-
+  overflow: scroll;
 }
 
 .lecturedp2Div {
