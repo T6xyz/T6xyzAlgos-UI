@@ -1,11 +1,11 @@
 <body>
     <div class="parentHome">
-        <video [src] = "pathPage1" muted loop autoplay class="videoHome"></video>
+        <video [src] = "pathPage1" muted loop autoplay disablepictureinpicture class="videoHome"></video>
         <div class="child1Home">
         </div>
         <div class="child1Home child2Home">
             <img [src] = "path" height="60px" width="150px" style="margin-top: 8px;">
-            <button class="buttonHome" mat-flat-button style="position: relative; float: right; left: -8vw; background-color: rgb(37, 143, 143);">Register</button>
+            <a href="http://localhost:4200/register" class="headerTextHome">Register</a>
             <p class="headerTextHome" style="font-size: 18px; position: relative;">or</p>
             <a href="http://localhost:4200/login" class="headerTextHome">Sign in</a>
             <a href="http://localhost:4200/about" class="headerTextHome">About</a>
@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="parent2Home">
-        <video [src] = "pathPage2" muted loop autoplay class="videoHome"></video>
+        <video [src] = "pathPage2" muted loop autoplay disablepictureinpicture class="videoHome"></video>
         <div class="child5Home" style="opacity: 0;">
         </div>
         <div class="child5Home child6Home hiddenHome">
@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="parent3Home">
-        <video [src] = "pathPage3" muted loop autoplay class="videoHome"></video>
+        <video [src] = "pathPage3" muted loop autoplay disablepictureinpicture class="videoHome"></video>
         <div class="child7Home" style="opacity: 0;">
         </div>
         <div class="child7Home child8Home hiddenHome">
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="parent4Home">
-        <video [src] = "pathPage4" muted loop autoplay class="videoHome"></video>
+        <video [src] = "pathPage4" muted loop disablepictureinpicture autoplay class="videoHome"></video>
         <div class="child9Home" style="opacity: 0;">
         </div>
         <div class="child9Home child10Home hiddenHome">

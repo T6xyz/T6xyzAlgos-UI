@@ -1479,7 +1479,7 @@ p {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  color: white;
+  color: rgb(104, 104, 104);
 }
 
 .loginContainer .rememberLogin {
@@ -1843,4 +1843,8 @@ p {
   .child8Home {
       font-size: 2px;
   }
+}
+
+input[type='file']{
+  font-size: 11px;
 }
