@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-infobar',
   imports: [],
   templateUrl: './infobar.component.html',
-  styleUrl: './infobar.component.css'
+  styleUrl: './infobar.component.scss'
 })
 export class InfobarComponent {
   path: string = "assets/T6xyzLogo.png";

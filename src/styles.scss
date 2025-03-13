@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 :root {
   --step-0: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
   --step-1: clamp(1.5rem, 1.1458rem + 0.3333vw, 1.5625rem);
@@ -6,6 +7,21 @@
   --step-3: clamp(2.16rem, 0.5654rem + 1.5008vw, 2.4414rem);
   --step-4: clamp(2.592rem, -0.0133rem + 2.452vw, 3.0518rem);
   --step-5: clamp(3.1104rem, -0.8806rem + 3.7563vw, 3.8147rem);
+}
+
+:root {
+  @include mat.checkbox-overrides((
+    selected-checkmark-color: rgb(255, 255, 255),
+    selected-focus-icon-color: rgb(37, 143, 143),
+    selected-hover-icon-color: rgb(37, 143, 143),
+    selected-icon-color: rgb(37, 143, 143),
+    selected-focus-state-layer-color: none,
+    selected-hover-state-layer-color: none,
+    selected-pressed-state-layer-color: none,
+    unselected-focus-state-layer-color: none,
+    unselected-hover-state-layer-color: none,
+    unselected-pressed-state-layer-color: none,
+  ));
 }
 
 * {
@@ -1845,6 +1861,11 @@ p {
   }
 }
 
-input[type='file']{
+input[type='file'] {
   font-size: 11px;
+}
+input[type='file']::-webkit-file-upload-button {
+  font-size: 13px;
+  height: 28px;
+  cursor: pointer;
 }

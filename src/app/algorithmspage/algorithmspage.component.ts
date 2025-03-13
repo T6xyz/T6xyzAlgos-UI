@@ -9,7 +9,7 @@ import {MatCardModule} from '@angular/material/card';
   selector: 'app-algorithmspage',
   imports: [ProfilebarComponent, InfobarComponent, RouterLink, RouterOutlet, MatCardModule],
   templateUrl: './algorithmspage.component.html',
-  styleUrl: './algorithmspage.component.css'
+  styleUrl: './algorithmspage.component.scss'
 })
 export class AlgorithmspageComponent implements AfterViewInit {
   path: string = "/assets/T6xyzLogo.png";

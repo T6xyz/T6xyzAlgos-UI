@@ -7,7 +7,7 @@ import { InfobarComponent } from '../infobar/infobar.component';
   selector: 'app-login',
   imports: [InfobarComponent],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.scss'
 })
 export class LoginComponent implements OnInit, AfterViewInit {
   pathLoginVid: string = "assets/pageLogin.mp4"

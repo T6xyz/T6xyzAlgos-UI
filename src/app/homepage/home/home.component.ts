@@ -8,7 +8,7 @@ import { InfobarComponent } from '../../infobar/infobar.component';
   selector: 'app-home',
   imports: [RouterOutlet, MatButtonModule, InfobarComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.scss'
 })
 
 export class HomeComponent implements AfterViewInit {

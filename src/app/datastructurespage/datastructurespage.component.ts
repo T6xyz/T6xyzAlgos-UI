@@ -10,7 +10,7 @@ import {MatCardModule} from '@angular/material/card';
   selector: 'app-datastructurespage',
   imports: [ProfilebarComponent, InfobarComponent, RouterLink, RouterOutlet, MatCardModule],
   templateUrl: './datastructurespage.component.html',
-  styleUrl: './datastructurespage.component.css'
+  styleUrl: './datastructurespage.component.scss'
 })
 export class DatastructurespageComponent implements AfterViewInit {
   path: string = "/assets/T6xyzLogo.png";

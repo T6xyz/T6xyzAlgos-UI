@@ -7,7 +7,7 @@ import { AfterViewInit } from '@angular/core';
   selector: 'app-profilebar',
   imports: [MatIconModule, MatButtonModule, MatDividerModule],
   templateUrl: './profilebar.component.html',
-  styleUrl: './profilebar.component.css'
+  styleUrl: './profilebar.component.scss'
 })
 
 export class ProfilebarComponent implements AfterViewInit {

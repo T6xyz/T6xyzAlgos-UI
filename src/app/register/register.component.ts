@@ -7,7 +7,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
   selector: 'app-register',
   imports: [InfobarComponent, MatCheckboxModule],
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrl: './register.component.scss'
 })
 export class RegisterComponent implements AfterViewInit, OnInit {
   pathLoginVid: string = "assets/pageLogin.mp4"

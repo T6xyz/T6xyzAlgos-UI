@@ -10,7 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
   selector: 'app-lecturedp',
   imports: [NgOptimizedImage, ProfilebarComponent, InfobarComponent, MatCheckboxModule, MatButtonModule],
   templateUrl: './lecturedp.component.html',
-  styleUrl: './lecturedp.component.css'
+  styleUrl: './lecturedp.component.scss'
 })
 
 

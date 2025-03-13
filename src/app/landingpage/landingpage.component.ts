@@ -15,7 +15,7 @@ import { OnInit } from '@angular/core';
   selector: 'app-landingpage',
   imports: [MatCardModule, ProfilebarComponent, NgIf, InfobarComponent, RouterLink, RouterOutlet, AlgorithmspageComponent, NgOptimizedImage],
   templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.css'
+  styleUrl: './landingpage.component.scss'
 })
 export class LandingpageComponent implements AfterViewInit, OnInit {
   path: string = "/assets/T6xyzLogo.png";

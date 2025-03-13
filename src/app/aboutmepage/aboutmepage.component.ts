@@ -7,7 +7,7 @@ import { InfobarComponent } from '../infobar/infobar.component';
   selector: 'app-aboutmepage',
   imports: [ProfilebarComponent, InfobarComponent],
   templateUrl: './aboutmepage.component.html',
-  styleUrl: './aboutmepage.component.css'
+  styleUrl: './aboutmepage.component.scss'
 })
 export class AboutmepageComponent implements AfterViewInit {
   path: string = "/assets/T6xyzLogo.png";
