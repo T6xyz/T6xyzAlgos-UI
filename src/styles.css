@@ -1211,9 +1211,7 @@ a {
   overflow: hidden;
   display: flex;
   background-color: rgb(8, 8, 8);
-  height: 800px;
-  min-height: 800px;
-  max-height: 800px;
+  height: 100vh;
 }
 
 .profileLecturedp {
