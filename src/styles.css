@@ -1364,6 +1364,13 @@ a {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.parent2Lecturedp::-webkit-scrollbar {
+  display: none;
+}
+.parent2Lecturedp {
+  scrollbar-width: none;
+}
+
 
 .lecturedp2Div {
   display: table-cell; 
