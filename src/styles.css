@@ -1208,7 +1208,7 @@ a {
 
 .parent2Lecturedp {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   background-color: rgb(8, 8, 8);
   height: 800px;
