@@ -22,5 +22,5 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'e', component: ErrorpageComponent},
-    
+    {path: 'verify', component: EmailverificationComponent}
 ];
