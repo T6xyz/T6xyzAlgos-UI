@@ -7,6 +7,10 @@ import { AboutmepageComponent } from './aboutmepage/aboutmepage.component';
 import { LecturedpComponent } from './lecturecomponents/lecturedp/lecturedp.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { EmailverificationComponent } from './emailverification/emailverification.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -16,5 +20,7 @@ export const routes: Routes = [
     {path: 'about', component: AboutmepageComponent},
     {path: 'dp', component: LecturedpComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'register', component: RegisterComponent}
+    {path: 'register', component: RegisterComponent},
+    {path: 'e', component: ErrorpageComponent},
+    
 ];
