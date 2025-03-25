@@ -6,19 +6,19 @@
         </a>
         <div class="parentLogin">
             <div class="loginContainer">
-                <form action="">
-                    <h1 style="color: white;">Login</h1>
+                <form [formGroup]="loginForm">
+                    <h1 style="color: white; text-shadow: 0px 0px 12px black;">Login</h1>
                     <div class="inputLogin">
-                        <input type="text" placeholder="Username" required>
+                        <input  formControlName="username" type="text" placeholder="Username" required id="username">
                     </div>
                     <div class="inputLogin">
-                        <input type="password" placeholder="Password" required>
+                        <input formControlName="password" type="password" placeholder="Password" required id="password">
                     </div>
                     <div class="rememberLogin">
                         <label style="color: white;"><input type="checkbox">Remember me</label>
                         <a href="">Forgot password?</a>
                     </div>
-                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn" (click)="onSubmit()">Login</button>
                     <div class="registerLogin">
                         <p style="color: white;">Don't have an account?<a href=""> Register</a>
                         </p>
