@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
   // Change URL in production!!!!!!!
-  private URL = "http://localhost:8080/login";
+  private LOGIN_URL = "http://localhost:8080/login";
+  private REGISTER_URL = "http://localhost:8080/register";
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +17,22 @@ export class UserService {
 
 
   loginUser(info: any) {
-    return this.http.post(this.URL, JSON.stringify(info), this.httpOptions);
+    return this.http.post(this.LOGIN_URL, JSON.stringify(info), this.httpOptions);
+  }
+
+  registerUser(info: any) {
+    return this.http.post(this.REGISTER_URL, JSON.stringify(info), this.httpOptions);
+  }
+
+  getToken() {
+    return window.localStorage.getItem("authToken");
+  }
+
+  setToken(token: string) {
+    if (token !== null) {
+      window.localStorage.setItem("authToken", token);
+    } else {
+      window.localStorage.removeItem("authToken");
+    }
   }
 }

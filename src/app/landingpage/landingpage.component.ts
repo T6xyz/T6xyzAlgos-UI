@@ -10,6 +10,7 @@ import { AlgorithmspageComponent } from '../algorithmspage/algorithmspage.compon
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 import { OnInit } from '@angular/core';
+import { HomeService } from '../home.service';
 
 @Component({
   selector: 'app-landingpage',
@@ -22,9 +23,15 @@ export class LandingpageComponent implements AfterViewInit, OnInit {
   pathDS: string = "assets/pageDS.jpg";
   pathA: string = "assets/pageA.jpg";
   profilePic: string = "assets/profile.jpg";
+  icon1: string = "assets/icon1.png";
+  icon2: string = "assets/icon2.png";
+
+  constructor(private service: HomeService) {}
 
   ngOnInit(): void {
+      this.service.getHome();
   }
+
 
   ngAfterViewInit(): void {
 

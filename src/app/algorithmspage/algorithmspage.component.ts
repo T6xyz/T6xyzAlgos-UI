@@ -4,6 +4,7 @@ import { ProfilebarComponent } from '../profilebar/profilebar.component';
 import { InfobarComponent } from '../infobar/infobar.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
+import { AlgorithmsService } from '../algorithms.service';
 
 @Component({
   selector: 'app-algorithmspage',
@@ -14,6 +15,12 @@ import {MatCardModule} from '@angular/material/card';
 export class AlgorithmspageComponent implements AfterViewInit {
   path: string = "/assets/T6xyzLogo.png";
   profilePic: string = "assets/profile.jpg";
+
+  constructor(private service: AlgorithmsService) {}
+
+  ngOnInit(): void {
+    this.service.getAlgos();
+  }
 
   ngAfterViewInit(): void {
     document.addEventListener("click", (event) => {

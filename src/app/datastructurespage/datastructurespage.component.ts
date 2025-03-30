@@ -4,6 +4,7 @@ import { ProfilebarComponent } from '../profilebar/profilebar.component';
 import { InfobarComponent } from '../infobar/infobar.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
+import { DatastructuresService } from '../datastructures.service';
 
 
 @Component({
@@ -15,6 +16,12 @@ import {MatCardModule} from '@angular/material/card';
 export class DatastructurespageComponent implements AfterViewInit {
   path: string = "/assets/T6xyzLogo.png";
   profilePic: string = "assets/profile.jpg";
+
+  constructor(private service: DatastructuresService) {}
+
+  ngOnInit(): void {
+    this.service.getDS();
+  }
 
   ngAfterViewInit(): void {
     document.addEventListener("click", (event) => {

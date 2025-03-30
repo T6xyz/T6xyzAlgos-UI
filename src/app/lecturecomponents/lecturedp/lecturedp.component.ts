@@ -5,6 +5,7 @@ import { ProfilebarComponent } from '../../profilebar/profilebar.component';
 import { InfobarComponent } from '../../infobar/infobar.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
+import { DplecturesService } from '../../dplectures.service';
 
 @Component({
   selector: 'app-lecturedp',
@@ -20,7 +21,10 @@ export class LecturedpComponent implements OnInit, AfterViewInit {
   pathA: string = "assets/pageA.jpg";
   profilePic: string = "assets/profile.jpg";
 
+  constructor(private service: DplecturesService) {}
+
   ngOnInit(): void {
+    this.service.getLectures();
     let tab = <HTMLElement> document.getElementById("dp1");
     tab.classList.add("selected");
   }

@@ -6,28 +6,28 @@
         </a>
         <div class="parentLogin">
             <div class="loginContainer">
-                <form action="">
+                <form [formGroup]="registerForm">
                     <h1 style="color: rgb(255, 255, 255); text-shadow: 0px 0px 12px black;">Register</h1>
                     <div class="inputLogin">
-                        <input type="text" placeholder="Username" required>
+                        <input formControlName="username" type="text" placeholder="Username" required>
                     </div>
                     <div class="inputLogin">
-                        <input type="password" placeholder="Password" required>
+                        <input formControlName="password" type="password" placeholder="Password" required>
                     </div>
                     <div class="inputLogin">
-                        <input type="text" placeholder="Email" required>
+                        <input formControlName="email" type="email" placeholder="Email" required>
                     </div>
                     <div style="padding-bottom: 20px; border-bottom: solid grey 1px;">
                         <h2 style="color: white; text-align: center;">Profile Picture</h2>
-                        <input type="file" id="profileFile">
+                        <input formControlName="profile" type="file" id="profileFile" accept="image/png, image/jpeg">
                     </div>
                     <div style="padding-bottom: 10px; padding-top: 20px;  backdrop-filter: blur(2px);">
-                        <mat-checkbox><span style="color: white; font-size: 15px; text-shadow: 0px 0px 2px black;">Are you a student at a US college or university?</span></mat-checkbox>
+                        <mat-checkbox formControlName="isStudent"><span style="color: white; font-size: 15px; text-shadow: 0px 0px 2px black;">Are you a student at a US college or university?</span></mat-checkbox>
                     </div>
                     <div style="padding-bottom: 20px;">
-                        <mat-checkbox><span style="color: white; font-size: 15px;">I agree to </span><span><a href="">Terms & Conditions</a></span></mat-checkbox>
+                        <mat-checkbox formControlName="agreeTerms"><span style="color: white; font-size: 15px;">I agree to </span><span><a href="">Terms & Conditions</a></span></mat-checkbox>
                     </div>
-                    <button type="submit" class="btn">Register</button>
+                    <button type="submit" class="btn" (click)="onSubmit()">Register</button>
                     <div class="registerLogin">
                         <p style="color: white;">Have an account already?<a href=""> Login</a>
                         </p>

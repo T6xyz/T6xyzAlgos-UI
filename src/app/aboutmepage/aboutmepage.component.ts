@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AfterViewInit } from '@angular/core';
 import { ProfilebarComponent } from '../profilebar/profilebar.component';
 import { InfobarComponent } from '../infobar/infobar.component';
+import { AboutMeService } from '../about-me.service';
 
 @Component({
   selector: 'app-aboutmepage',
@@ -9,10 +10,16 @@ import { InfobarComponent } from '../infobar/infobar.component';
   templateUrl: './aboutmepage.component.html',
   styleUrl: './aboutmepage.component.scss'
 })
-export class AboutmepageComponent implements AfterViewInit {
+export class AboutmepageComponent implements AfterViewInit, OnInit {
   path: string = "/assets/T6xyzLogo.png";
   profilePic: string = "assets/profile.jpg";
   headshot: string = "assets/headshot.jpg";
+
+  constructor(private service: AboutMeService) {}
+
+  ngOnInit(): void {
+    this.service.getHome();
+  }
 
   ngAfterViewInit(): void {
     document.addEventListener("click", (event) => {
