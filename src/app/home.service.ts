@@ -16,6 +16,10 @@ export class HomeService {
   };
 
   getHome() {
+    if (window.localStorage.getItem("authToken") != null) {
+      this.httpOptions.headers = this.httpOptions.headers.set("Authorization", 'Bearer ' + window.localStorage.getItem("authToken"));
+    }
+    
     return this.http.get(this.HOME_URL, this.httpOptions).subscribe((data: any) => {
       if (data === "OK") {
         this.router.navigate(['home']);

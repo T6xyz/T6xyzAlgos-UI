@@ -472,12 +472,12 @@ a {
 }
 
 .cardDS:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
   transition: transform 0.5s ease;
 }
 
 .cardA:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
   transition: transform 0.5s ease;
 }
 
@@ -1421,7 +1421,7 @@ p {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 50px;
+  height: 100px;
   margin: 30px 0;
 }
 .inputLogin input {
@@ -1567,6 +1567,14 @@ p {
 .loginLinkText:hover:after {
   width: 100%;
 }
+
+:root {
+  @include mat.form-field-overrides((
+    outlined-input-text-color: rgb(255, 255, 255),
+    outlined-hover-outline-color: rgb(70, 70, 70)
+  ));
+}
+
 @media screen and (max-width: 659px) {
   .loginLink {
     display: none;

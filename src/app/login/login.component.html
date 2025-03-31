@@ -7,17 +7,40 @@
         <div class="parentLogin">
             <div class="loginContainer">
                 <form [formGroup]="loginForm">
-                    <h1 style="color: white; text-shadow: 0px 0px 12px black;">Login</h1>
-                    <div class="inputLogin">
+                    <h1 style="color: white; text-shadow: 0px 0px 12px black; padding-bottom: 10px;">Login</h1>
+                    <mat-form-field style="width: 100%; padding-bottom: 15px;" appearance="outline">
+                        <input
+                          matInput
+                          formControlName="username"
+                          (blur)="getErrorMessageUsername()"
+                          required
+                        />
+                        @if (loginForm.get('username')?.invalid) {
+                          <mat-error>{{ getErrorMessageUsername() }}</mat-error>
+                        }
+                    </mat-form-field>
+                    <!-- <div class="inputLogin">
                         <input formControlName="username" type="text" placeholder="Username" required id="username">
-                    </div>
-                    <div class="inputLogin">
+                    </div> -->
+                    <!-- <div class="inputLogin">
                         <input formControlName="password" type="password" placeholder="Password" required id="password">
-                    </div>
-                    <div class="rememberLogin">
+                    </div> -->
+                    <mat-form-field style="width: 100%; padding-bottom: 15px;" appearance="outline">
+                        <input
+                          matInput
+                          formControlName="password"
+                          (blur)="getErrorMessagePassword()"
+                          required
+                          type="password"
+                        />
+                        @if (loginForm.get('password')?.invalid) {
+                          <mat-error>{{ getErrorMessagePassword() }}</mat-error>
+                        }
+                    </mat-form-field>
+                    <!-- <div class="rememberLogin">
                         <label style="color: white;"><input type="checkbox">Remember me</label>
                         <a href="">Forgot password?</a>
-                    </div>
+                    </div> -->
                     <button type="submit" class="btn" (click)="onSubmit()">Login</button>
                     <div class="registerLogin">
                         <p style="color: white;">Don't have an account?<a href=""> Register</a>
