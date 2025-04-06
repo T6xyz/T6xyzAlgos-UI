@@ -15,18 +15,22 @@ export class LoginService {
 
   constructor(private http: HttpClient, private router: Router) { }
 
-  getLogin() {
+  getLoginJWT() {
     if (window.localStorage.getItem("authToken") != null) {
       this.httpOptions.headers = this.httpOptions.headers.set("Authorization", 'Bearer ' + window.localStorage.getItem("authToken"));
     }
 
-    return this.http.get(this.LOGIN_URL, this.httpOptions).subscribe((data: any) => {
-      if (data === "OK") {
-        this.router.navigate(['home']);
-      }
-    }, (error) => {
-      console.log(error);
-      this.router.navigate(['login']);
+    return this.http.get(this.LOGIN_URL, this.httpOptions).subscribe({
+      next: (data) => this.handleData(data),
+      error: (error) => this.handleError(error)
     });
+  }
+  handleData(data: any) {
+    if (data === "OK") {
+      this.router.navigate(['home']);
+    }
+  }
+  handleError(error: any) {
+    this.router.navigate(['login']);
   }
 }

@@ -11,6 +11,8 @@ import { LoginService } from '../login.service';
 import { NgIf } from '@angular/common';
 import { MatFormField } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { RegisterComponent } from '../register/register.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 export interface UserObject {
   username: string,
@@ -21,7 +23,7 @@ export interface UserObject {
 
 @Component({
   selector: 'app-login',
-  imports: [InfobarComponent, ReactiveFormsModule, NgIf, MatFormField, FormsModule, MatInputModule],
+  imports: [InfobarComponent, ReactiveFormsModule, NgIf, MatFormField, FormsModule, MatInputModule, RegisterComponent, RouterLink, RouterLinkActive],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -35,7 +37,7 @@ export class LoginComponent implements OnInit, AfterViewInit, OnInit {
 
 
   ngOnInit(): void {
-      this.service2.getLogin();
+      this.service2.getLoginJWT();
   }
 
   loginForm = new FormGroup({
@@ -50,24 +52,28 @@ export class LoginComponent implements OnInit, AfterViewInit, OnInit {
 
   onSubmit() {
     if (!this.loginForm.get('username')?.hasError("required") && !this.loginForm.get('password')?.hasError("required")) {
-      return this.service.loginUser(this.loginForm.value).subscribe((data: any) => {
-        this.service.setToken(data.token);
-        this.service2.getLogin();
-
-      }, (error) => {
-        if (error?.status == 400) {
-          this.loginForm.controls.username.setErrors(null);
-          this.loginForm.controls.password.setErrors({incorrect: error?.error.message});
-          this.getErrorMessageUsername();
-        }
-        if (error?.status == 404) {
-          this.loginForm.controls.password.setErrors(null);
-          this.loginForm.controls.username.setErrors({incorrect: error?.error.message});
-          this.getErrorMessagePassword();
-        }
+      return this.service.loginUser(this.loginForm.value).subscribe({
+        next: (next) => this.handleData(next),
+        error: (error) => this.handleError(error)
       });
     } else {
       return "Something went wrong!";
+    }
+  }
+  handleData(data: any) {
+    this.service.setToken(data.token);
+    this.service2.getLoginJWT();
+  }
+  handleError(error: any) {
+    if (error?.status == 400) {
+      this.loginForm.controls.username.setErrors(null);
+      this.loginForm.controls.password.setErrors({incorrect: error?.error.message});
+      this.getErrorMessageUsername();
+    }
+    if (error?.status == 404) {
+      this.loginForm.controls.password.setErrors(null);
+      this.loginForm.controls.username.setErrors({incorrect: error?.error.message});
+      this.getErrorMessagePassword();
     }
   }
 
@@ -93,4 +99,5 @@ export class LoginComponent implements OnInit, AfterViewInit, OnInit {
       return "";
     }
   }
+
 }

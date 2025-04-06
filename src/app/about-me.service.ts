@@ -16,10 +16,19 @@ export class AboutMeService {
   };
 
   getHome() {
-    return this.http.get(this.LOGIN_URL, this.httpOptions).subscribe((data: any) => {
-      if (data === "OK") {
-        this.router.navigate(['home']);
-      }
-    }, (error) => this.router.navigate(['about']));
+    return this.http.get(this.LOGIN_URL, this.httpOptions).subscribe({
+      next: (next) => this.getData(next),
+      error: (error) => this.getError(error)
+    });
+  }
+
+  getData(data: any) {
+    if (data === "OK") {
+      this.router.navigate(['home']);
+    }
+  }
+
+  getError(error: any) {
+    this.router.navigate(['about'])
   }
 }

@@ -8,28 +8,87 @@
             <div class="loginContainer">
                 <form [formGroup]="registerForm">
                     <h1 style="color: rgb(255, 255, 255); text-shadow: 0px 0px 12px black;">Register</h1>
-                    <div class="inputLogin">
+                    <!-- <div class="inputLogin">
                         <input formControlName="username" type="text" placeholder="Username" required>
-                    </div>
-                    <div class="inputLogin">
+                    </div> -->
+                    <mat-form-field style="width: 100%; padding-bottom: 5px; padding-top: 20px;" appearance="outline">
+                        <input
+                          matInput
+                          formControlName="username"
+                          (blur)="getErrorMessageUsername()"
+                          required
+                          placeholder="username"
+                        />
+                        @if (registerForm.get('username')?.invalid) {
+                          <mat-error>{{ getErrorMessageUsername() }}</mat-error>
+                        }
+                    </mat-form-field>
+                    <mat-form-field style="width: 100%; padding-bottom: 5px;" appearance="outline">
+                        <input
+                          matInput
+                          formControlName="email"
+                          (blur)="getErrorMessageEmail()"
+                          required
+                          type="email"
+                          placeholder="email"
+                        />
+                        @if (registerForm.get('email')?.invalid) {
+                          <mat-error>{{ getErrorMessageEmail() }}</mat-error>
+                        }
+                    </mat-form-field>
+                    <!-- <div class="inputLogin">
                         <input formControlName="password" type="password" placeholder="Password" required>
-                    </div>
-                    <div class="inputLogin">
+                    </div> -->
+                    <mat-form-field style="width: 100%; padding-bottom: 5px;" appearance="outline">
+                        <input
+                          matInput
+                          formControlName="password"
+                          (blur)="getErrorMessagePassword()"
+                          required
+                          type="password"
+                          placeholder="password"
+                        />
+                        @if (registerForm.get('password')?.invalid) {
+                          <mat-error>{{ getErrorMessagePassword() }}</mat-error>
+                        }
+                    </mat-form-field>
+                    <mat-form-field style="width: 100%; padding-bottom: 5px;" appearance="outline">
+                        <input
+                          matInput
+                          formControlName="confirmPassword"
+                          (blur)="getErrorMessagePassword()"
+                          required
+                          type="password"
+                          placeholder="Confirm password"
+                        />
+                        @if (registerForm.get('confirmPassword')?.invalid) {
+                          <mat-error>{{ getErrorMessageConfirmPassword() }}</mat-error>
+                        }
+                    </mat-form-field>
+                    <!-- <div class="inputLogin">
                         <input formControlName="email" type="email" placeholder="Email" required>
-                    </div>
-                    <div style="padding-bottom: 20px; border-bottom: solid grey 1px;">
+                    </div> -->
+                    <div style="padding-bottom: 10px; border-bottom: solid grey 1px;">
                         <h2 style="color: white; text-align: center;">Profile Picture</h2>
                         <input formControlName="profile" type="file" id="profileFile" accept="image/png, image/jpeg">
                     </div>
                     <div style="padding-bottom: 10px; padding-top: 20px;  backdrop-filter: blur(2px);">
-                        <mat-checkbox formControlName="isStudent"><span style="color: white; font-size: 15px; text-shadow: 0px 0px 2px black;">Are you a student at a US college or university?</span></mat-checkbox>
+                        <mat-checkbox formControlName="isStudent">
+                            <span style="color: white; font-size: 15px; text-shadow: 0px 0px 2px black;">Are you a student at a US college or university?</span>
+                        </mat-checkbox>
                     </div>
                     <div style="padding-bottom: 20px;">
-                        <mat-checkbox formControlName="agreeTerms"><span style="color: white; font-size: 15px;">I agree to </span><span><a href="">Terms & Conditions</a></span></mat-checkbox>
+                        <mat-checkbox formControlName="agreeTerms">
+                            <span style="color: white; font-size: 15px;">I agree to </span><span><a href="">Terms & Conditions</a></span>
+
+                            @if (registerForm.get('agreeTerms')?.invalid) {
+                                <mat-error>{{ getErrorMessageTerms() }}</mat-error>
+                              }
+                        </mat-checkbox>
                     </div>
                     <button type="submit" class="btn" (click)="onSubmit()">Register</button>
                     <div class="registerLogin">
-                        <p style="color: white;">Have an account already?<a href=""> Login</a>
+                        <p style="color: white;">Have an account already?<a routerLink="/login"> Login</a>
                         </p>
                     </div>
                 </form>

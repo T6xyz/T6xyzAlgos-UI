@@ -16,10 +16,19 @@ export class DatastructuresService {
       };
     
       getDS() {
-        return this.http.get(this.LOGIN_URL, this.httpOptions).subscribe((data: any) => {
-          if (data === "OK") {
-            this.router.navigate(['ds']);
-          }
-        }, (error) => this.router.navigate(['login']));
+        return this.http.get(this.LOGIN_URL, this.httpOptions).subscribe({
+          next: (next) => this.getData(next),
+          error: (error) => this.getError(error)
+        });
+      }
+
+      getData(data: any) {
+        if (data === "OK") {
+          this.router.navigate(['ds']);
+        }
+      }
+
+      getError(error: any) {
+        this.router.navigate(['login'])
       }
 }

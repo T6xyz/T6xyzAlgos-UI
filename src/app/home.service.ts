@@ -20,10 +20,17 @@ export class HomeService {
       this.httpOptions.headers = this.httpOptions.headers.set("Authorization", 'Bearer ' + window.localStorage.getItem("authToken"));
     }
     
-    return this.http.get(this.HOME_URL, this.httpOptions).subscribe((data: any) => {
-      if (data === "OK") {
-        this.router.navigate(['home']);
-      }
-    }, (error) => this.router.navigate(['login']));
+    return this.http.get(this.HOME_URL, this.httpOptions).subscribe({
+      next: (next) => this.getData(next),
+      error: (error) => this.getError(error)
+    });
+  }
+  getData(data: any) {
+    if (data === "OK") {
+      this.router.navigate(['home']);
+    }
+  }
+  getError(error: any) {
+    this.router.navigate(['login']);
   }
 }
